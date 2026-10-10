@@ -31,7 +31,7 @@ const NavbarComponent = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <Navbar className='absolute top-10'>
+    <Navbar className='absolute fixed top-10'>
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
@@ -71,14 +71,7 @@ const NavbarComponent = () => {
                 variant="primary"
                 className="w-full"
               >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
+                Contact Me
               </NavbarButton>
             </div>
           </MobileNavMenu>

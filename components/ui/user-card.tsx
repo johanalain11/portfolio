@@ -4,7 +4,7 @@ import React from 'react'
 
 const UserCard = () => {
   return (
-    <div className="card right-6 md:right-20">
+    <div className="card right-6 md:right-20 hidden md:block">
       <img
         className="image"
         alt="Avatar"
