@@ -56,7 +56,7 @@ export const HeroParallax = ({
   );
   return (
     <div
-      ref={ref} id='projects'
+      ref={ref} id='designs'
       className="h-[265vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:500px] [transform-style:preserve-3d]"
     >
       <Header />
@@ -105,7 +105,7 @@ export const Header = () => {
   return (
     <div className="max-w-6xl relative mx-auto py-10 md:py-24 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-black z-50">
-        My Realised <br /> Projects
+        My Realised <br /> Designs
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-black">
         We build beautiful products with the latest technologies and frameworks.

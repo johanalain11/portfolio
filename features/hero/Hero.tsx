@@ -19,7 +19,7 @@ const UserCard = dynamic(() => import('../../components/ui/user-card'), {
 
 const Hero = () => {
 
-  const words = ['a Web Frontend Developper', 'a Software Engineer', 'a Mobile Developper', 'a Graphic Designer', 'a UX/UI Designer'];
+  const words = ['a Web Frontend Developper', 'a Software Engineer', 'a Mobile Developper', 'a Graphic Designer', 'a UX/UI Designer', 'a DevSecOps Enthusiast'];
 
   return (
     <div className="h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
           <div className="text-xl lg:text-2xl font-normal my-5 md:my-10 text-neutral-600 dark:text-neutral-400">
             <FlipWords words={words} /><br />
-            Building secured solutions.
+            Building secure, scalable and high-performance solutions.
           </div>
           <div className='flex gap-3'>
             <Button

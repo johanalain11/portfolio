@@ -5,9 +5,8 @@ import {
   useAnimationFrame,
   useMotionTemplate,
   useMotionValue,
-  useTransform,
 } from "motion/react";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export function Button({
@@ -82,44 +81,82 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
-  const progress = useMotionValue<number>(0);
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const pathRef = useRef<SVGPathElement | null>(null);
+  const [size, setSize] = useState({ width: 0, height: 0 });
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const resizeObserver = new ResizeObserver(([entry]) => {
+      setSize({
+        width: entry.contentRect.width,
+        height: entry.contentRect.height,
+      });
+    });
+    resizeObserver.observe(svg);
+
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  const getRadius = (value: string | undefined, dimension: number) => {
+    const parsedValue = Number.parseFloat(value ?? "0");
+    const radius = value?.trim().endsWith("%")
+      ? (dimension * parsedValue) / 100
+      : parsedValue;
+    return Math.min(dimension / 2, radius);
+  };
+  const rxPixels = getRadius(rx, size.width);
+  const ryPixels = getRadius(ry, size.height);
+  const path =
+    size.width > 0 && size.height > 0
+      ? [
+          `M ${rxPixels} 0`,
+          `H ${size.width - rxPixels}`,
+          `A ${rxPixels} ${ryPixels} 0 0 1 ${size.width} ${ryPixels}`,
+          `V ${size.height - ryPixels}`,
+          `A ${rxPixels} ${ryPixels} 0 0 1 ${size.width - rxPixels} ${size.height}`,
+          `H ${rxPixels}`,
+          `A ${rxPixels} ${ryPixels} 0 0 1 0 ${size.height - ryPixels}`,
+          `V ${ryPixels}`,
+          `A ${rxPixels} ${ryPixels} 0 0 1 ${rxPixels} 0`,
+          "Z",
+        ].join(" ")
+      : "";
 
   useAnimationFrame((time) => {
-    const length = pathRef.current?.getTotalLength();
+    const pathElement = pathRef.current;
+    if (!path || !pathElement || pathElement.getAttribute("d") !== path) return;
+
+    const length = pathElement.getTotalLength();
     if (length) {
       const pxPerMillisecond = length / duration;
-      progress.set((time * pxPerMillisecond) % length);
+      const point = pathElement.getPointAtLength(
+        (time * pxPerMillisecond) % length,
+      );
+      x.set(point.x);
+      y.set(point.y);
     }
   });
-
-  const x = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).x,
-  );
-  const y = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).y,
-  );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
 
   return (
     <>
       <svg
+        ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
+        viewBox={`0 0 ${size.width} ${size.height}`}
         className="absolute h-full w-full"
         width="100%"
         height="100%"
         {...otherProps}
       >
-        <rect
-          fill="none"
-          width="100%"
-          height="100%"
-          rx={rx}
-          ry={ry}
+        <path
+          d={path}
           ref={pathRef}
         />
       </svg>

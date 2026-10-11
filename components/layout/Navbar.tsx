@@ -11,8 +11,8 @@ const NavbarComponent = () => {
       link: "#about",
     },
     {
-      name: "Education",
-      link: "#education",
+      name: "Skills",
+      link: "#skills",
     },
     {
       name: "Experiences",
@@ -21,6 +21,10 @@ const NavbarComponent = () => {
     {
       name: "Projects",
       link: "#projects",
+    },
+    {
+      name: "Designs",
+      link: "#designs",
     },
     {
       name: "Contact",

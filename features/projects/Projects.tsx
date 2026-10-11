@@ -1,102 +1,55 @@
-"use client";
-import React from "react";
-import { HeroParallax } from "../../components/ui/hero-parallax";
+import { projects } from '@/data/projects';
+import { ProjectCard } from '../../components/project-card'
 
-export function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
+export function Projects() {
+  const featuredProjects = projects.filter((project) => project.featured);
+
+  return (
+    <section
+      id="projects"
+      aria-labelledby="projects-title"
+      className="scroll-mt-24 bg-muted/30 px-6 py-20 sm:px-10 lg:px-16"
+    >
+      <div className="mx-auto max-w-6xl">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
+          Réalisations
+        </p>
+
+        <h2
+          id="projects-title"
+          className="text-3xl font-bold tracking-tight sm:text-4xl"
+        >
+          Des projets, des solutions concrètes.
+        </h2>
+
+        <p className="mt-5 max-w-2xl leading-7 text-muted-foreground">
+          Une sélection de projets illustrant mon approche du développement
+          logiciel, mes choix techniques et ma capacité à concevoir des
+          applications maintenables.
+        </p>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+
+        {featuredProjects.length === 0 && (
+          <p className="mt-8 text-muted-foreground">
+            Les projets seront présentés prochainement.
+          </p>
+        )}
+
+        {projects.some((project) => !project.featured) && (
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {projects
+              .filter((project) => !project.featured)
+              .map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+          </div>
+        )}
+      </div>
+    </section>
+  );
 }
-export const products = [
-  {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/moonbeam.png",
-  },
-  {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/cursor.png",
-  },
-  {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/algochurn.png",
-  },
-  {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/aceternityui.png",
-  },
-  {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-  },
-];
