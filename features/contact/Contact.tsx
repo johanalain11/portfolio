@@ -36,7 +36,7 @@ export function Contact() {
               borderRadius="1.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 gap-3 hover:bg-white hover:text-black transition ease-in-out duration-300"
             >
-              <a href={`mailto:${profile.email}`} className=' flex gap-3 items-center'>Contact Me <FaLocationArrow/></a>
+              <a href={`mailto:${profile.email}`} className=' flex gap-3 items-center'>Me contacter <FaLocationArrow/></a>
             </Button>
             <Button
               borderRadius="1.75rem"

@@ -41,7 +41,7 @@ const NavbarComponent = () => {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Contact Me</NavbarButton>
+            <NavbarButton variant="primary">Me contacter</NavbarButton>
           </div>
         </NavBody>
  
@@ -75,7 +75,7 @@ const NavbarComponent = () => {
                 variant="primary"
                 className="w-50"
               >
-                Contact Me
+                Me contacter
               </NavbarButton>
             </div>
           </MobileNavMenu>
