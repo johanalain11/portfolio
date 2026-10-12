@@ -56,8 +56,8 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className='gap-6 mt-10 md:mt-1 w-fit grid grid-cols-2 md:grid-cols-3'>
-            <div className="relative h-fit md:h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
+          <div className='gap-6 mt-10 md:mt-1 w-full md:w-fit grid grid-cols-1 md:grid-cols-3'>
+            <div className="relative h-12 md:h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
               <GlowingEffect
                 blur={0}
                 borderWidth={3}
@@ -67,12 +67,12 @@ const Hero = () => {
                 proximity={64}
                 inactiveZone={0.01}
               />
-              <div className='text-white'>
-                <h3 className='text-3xl font-black'>3 ans</h3>
+              <div className='text-white flex gap-4 md:gap-1 md:flex-col items-center md:items-start md:justify-start w-full justify-evenly'>
+                <h3 className='text-3xl font-black w-16'>3 ans</h3>
                 <p>d&apos;expérience</p>
               </div>
             </div>
-            <div className="relative h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
+            <div className="relative h-12 md:h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
               <GlowingEffect
                 blur={0}
                 borderWidth={3}
@@ -82,12 +82,12 @@ const Hero = () => {
                 proximity={64}
                 inactiveZone={0.01}
               />
-              <div className='text-white'>
-                <h3 className='text-3xl font-black'>4+</h3>
+              <div className='text-white flex gap-4 md:gap-1 md:flex-col items-center md:items-start md:justify-start w-full justify-evenly'>
+                <h3 className='text-3xl font-black w-16'>4+</h3>
                 <p className='justify-end'>Projets professionnels</p>
               </div>
             </div>
-            <div className="relative h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
+            <div className="relative h-12 md:h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
               <GlowingEffect
                 blur={0}
                 borderWidth={3}
@@ -97,8 +97,8 @@ const Hero = () => {
                 proximity={64}
                 inactiveZone={0.01}
               />
-              <div className='text-white'>
-                <h3 className='text-3xl font-black'>+10</h3>
+              <div className='text-white flex gap-4 md:gap-1 md:flex-col items-center md:items-start md:justify-start w-full justify-evenly'>
+                <h3 className='text-3xl font-black w-16'>+10</h3>
                 <p>Projets personnels</p>
               </div>
             </div>

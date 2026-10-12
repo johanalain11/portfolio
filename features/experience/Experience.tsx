@@ -21,9 +21,9 @@ export function Experience() {
     <section
       id="experiences"
       aria-labelledby="experience-title"
-      className="scroll-mt-24 px-6 py-20 sm:px-10 lg:px-16"
+      className="scroll-mt-24 px-0 py-10 sm:px-10 lg:px-16"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl px-6">
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
           Parcours professionnel
         </p>
