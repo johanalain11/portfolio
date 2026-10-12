@@ -68,7 +68,7 @@ const Hero = () => {
                 inactiveZone={0.01}
               />
               <div className='text-white flex gap-4 md:gap-1 md:flex-col items-center md:items-start md:justify-start w-full justify-evenly'>
-                <h3 className='text-3xl font-black w-16'>3 ans</h3>
+                <h3 className='text-3xl font-black'>3 ans</h3>
                 <p>d&apos;expérience</p>
               </div>
             </div>
@@ -83,7 +83,7 @@ const Hero = () => {
                 inactiveZone={0.01}
               />
               <div className='text-white flex gap-4 md:gap-1 md:flex-col items-center md:items-start md:justify-start w-full justify-evenly'>
-                <h3 className='text-3xl font-black w-16'>4+</h3>
+                <h3 className='text-3xl font-black'>4+</h3>
                 <p className='justify-end'>Projets professionnels</p>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Hero = () => {
                 inactiveZone={0.01}
               />
               <div className='text-white flex gap-4 md:gap-1 md:flex-col items-center md:items-start md:justify-start w-full justify-evenly'>
-                <h3 className='text-3xl font-black w-16'>+10</h3>
+                <h3 className='text-3xl font-black'>+10</h3>
                 <p>Projets personnels</p>
               </div>
             </div>
