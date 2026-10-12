@@ -8,6 +8,7 @@ import {Projects} from '@/features/projects/Projects';
 import { Engineering } from '@/features/engineering/Engineering';
 import { Contact } from '@/features/contact/Contact';
 import { Footer } from '@/components/layout/Footer';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         {/* <Engineering /> */}
         <Contact />
         <Footer />
+        <Analytics />
       </div>
     </main>
   );
