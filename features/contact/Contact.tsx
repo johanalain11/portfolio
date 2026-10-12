@@ -28,7 +28,7 @@ export function Contact() {
           <p className="mt-5 max-w-2xl leading-7 text-muted-foreground">
             Vous recherchez un développeur capable de contribuer à la
             conception et à l&apos;évolution de solutions logicielles ?
-            Je serais heureux d&apos;échanger sur vos projets et vos besoins.
+            Je serai heureux d&apos;échanger sur vos projets et vos besoins.
           </p>
 
           <div className="mt-8 flex gap-4 flex-row">
