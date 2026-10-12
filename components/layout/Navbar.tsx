@@ -7,25 +7,25 @@ const NavbarComponent = () => {
 
   const navItems = [
     {
-      name: "About",
+      name: "À propos",
       link: "#about",
     },
     {
-      name: "Skills",
+      name: "Compétences",
       link: "#skills",
     },
     {
-      name: "Experiences",
+      name: "Expériences",
       link: "#experiences",
     },
     {
-      name: "Projects",
+      name: "Projets",
       link: "#projects",
     },
-    {
-      name: "Designs",
-      link: "#designs",
-    },
+    // {
+    //   name: "Designs",
+    //   link: "#designs",
+    // },
     {
       name: "Contact",
       link: "#contact",
@@ -35,7 +35,7 @@ const NavbarComponent = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <Navbar className='absolute fixed top-10'>
+    <Navbar className='absolute fixed top-3 md:top-10'>
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />

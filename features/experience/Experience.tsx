@@ -48,9 +48,9 @@ export function Experience() {
 const data = experiences.map((exp) => ({
   title: `${formatDate(exp.startDate)} - ${exp.endDate ? formatDate(exp.endDate) : "Aujourd'hui"}`,
   content: (
-    <div className='p-5 -mt-5 bg-linear-to-tr from-blue-50 to-blue-200 rounded-3xl shadow-xl shadow-blue-300 border border-blue-200'>
+    <div className='p-5 sm:-mt-5 bg-linear-to-tr hover:scale-95 transition ease-in-out duration-300 from-blue-50 to-blue-200 rounded-3xl shadow-xl hover:shadow-lg shadow-blue-300 border border-blue-200'>
       <div>
-        <h3 className="text-3xl font-black">
+        <h3 className="text-2xl md:text-3xl font-black">
           {exp.role}
         </h3>
 
@@ -90,7 +90,7 @@ const data = experiences.map((exp) => ({
         {exp.technologies.map((technology) => (
           <li
             key={technology}
-            className="rounded-md border-blue-200 border bg-white px-3 py-1.5 text-sm"
+            className="rounded-md border-blue-200 border bg-white px-3 py-1.5 text-sm hover:bg-blue-800 hover:text-white transition ease-in-out duration-300 hover:shadow-blue-900 cursor-pointer"
           >
             {technology}
           </li>

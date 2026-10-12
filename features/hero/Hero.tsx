@@ -20,7 +20,7 @@ const UserCard = dynamic(() => import('../../components/ui/user-card'), {
 
 const Hero = () => {
 
-  const words = ['Développeur Web Frontend', 'Ingénieur Logiciel', 'Développeur Mobile', 'Designer graphique', 'UX/UI Designer', 'DevSecOps Enthusiast'];
+  const words = ['Développeur Web Frontend..', 'Ingénieur Logiciel..', 'Développeur Mobile..', 'Designer graphique..', 'UX/UI Designer..', 'DevSecOps Enthusiast..'];
 
   return (
     <div className="h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased" id='hero'>
@@ -34,7 +34,7 @@ const Hero = () => {
       <div className='w-full justify-center max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-16'>
         <div className='w-full flex flex-col gap-3 mt-24 md:mt-0'>
           <div className='flex gap-3 items-center text-2xl lg:text-3xl text-white'>
-            <p>I&#39;m</p>
+            <p>Je suis</p>
             <TextGenerateEffect className='text-white font-black' words="JOHAN NZALI" duration={1.5}/>
           </div>
           <div className="text-xl lg:text-2xl font-normal my-5 md:my-10 text-neutral-400">
@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
 
           <div className='gap-6 mt-10 md:mt-1 w-fit grid grid-cols-2 md:grid-cols-3'>
-            <div className="relative h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
+            <div className="relative h-fit md:h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">
               <GlowingEffect
                 blur={0}
                 borderWidth={3}
@@ -69,7 +69,7 @@ const Hero = () => {
               />
               <div className='text-white'>
                 <h3 className='text-3xl font-black'>3 ans</h3>
-                <p>d'expérience</p>
+                <p>d&apos;expérience</p>
               </div>
             </div>
             <div className="relative h-26 w-full bg-white/10 rounded-2xl border p-2 md:rounded-3xl md:p-3">

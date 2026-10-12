@@ -31,7 +31,7 @@ export function Contact() {
             Je serais heureux d&apos;échanger sur vos projets et vos besoins.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-8 flex gap-4 flex-row">
             <Button
               borderRadius="1.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 gap-3 hover:bg-white hover:text-black transition ease-in-out duration-300"

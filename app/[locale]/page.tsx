@@ -1,6 +1,6 @@
 import Hero from '../../features/hero/Hero';
 import NavbarComponent from '@/components/layout/Navbar';
-import AboutSection from '@/features/about/About';
+import About from '@/features/about/About';
 import Designs from '../../features/projects/Designs';
 import {Skills} from '@/features/skills/Skills';
 import {Experience} from '@/features/experience/Experience';
@@ -15,7 +15,7 @@ export default function Home() {
       <div className="w-full">
         <NavbarComponent />
         <Hero />
-        <AboutSection />
+        <About />
         <Skills />
         <Experience />
         <Projects />

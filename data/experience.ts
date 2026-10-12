@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
       'Participer à la conception et à l’amélioration de l’expérience utilisateur.',
       'Contribuer à la personnalisation de l’interface selon les besoins des utilisateurs.',
     ],
-    technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+    technologies: ['Angular', 'TypeScript', 'HTML/CSS', 'UML', 'Postman', 'Figma'],
   },
   {
     id: 'rccm',
@@ -42,7 +42,7 @@ export const experiences: Experience[] = [
       'Résolution des problèmes des processus automatisés, réduisant le temps d’arrêt de 20%.',
       'Participation à la conception et implémentation de la base de données des pièces manquantes des dossiers RCCM.'
     ],
-    technologies: ['WordPress'],
+    technologies: ['WordPress', 'Excel', ],
   },
   {
     id: 'patnuc',
@@ -58,7 +58,7 @@ export const experiences: Experience[] = [
       'Participation aux tests fonctionnels de la plateforme SINSAH, réduisant les bugs en production de 30%.',
       'Participation à l\'atelier de formation des formateurs de la plateforme SINSAH.',
     ],
-    technologies: ['UML', 'Postman', 'Kobo Tools'],
+    technologies: ['Kobo Tools', 'UML', 'Postman' ],
   },
   {
     id: 'gbc',
@@ -74,6 +74,6 @@ export const experiences: Experience[] = [
       'Tests & débogage de l’application, améliorant les opérations bancaires de 20%.',
       'Rédaction de la documentation technique.',
     ],
-    technologies: ['Java', 'SQLite'],
+    technologies: ['Java', 'SQLite', 'Android Studio'],
   },
 ];
