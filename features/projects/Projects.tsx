@@ -8,7 +8,7 @@ export function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-title"
-      className="scroll-mt-24 bg-muted/30 px-6 py-20 sm:px-10 lg:px-16"
+      className="scroll-mt-24 bg-muted/30 px-6 py-20 sm:px-10 lg:px-16 bg-black text-white"
     >
       <div className="mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
@@ -34,11 +34,11 @@ export function Projects() {
           ))}
         </div>
 
-        {featuredProjects.length === 0 && (
+        {/* {featuredProjects.length === 0 && (
           <p className="mt-8 text-muted-foreground">
             Les projets seront présentés prochainement.
           </p>
-        )}
+        )} */}
 
         {projects.some((project) => !project.featured) && (
           <div className="mt-8 grid gap-6 md:grid-cols-2">
