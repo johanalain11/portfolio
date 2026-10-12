@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from '../../components/layout/section-title';
 import './about.css';
 import { cn } from "@/lib/utils";
+import { profile } from '@/data/profile';
 
 const About = () => {
   return (
@@ -185,7 +186,7 @@ export const AboutSection = () => {
               <p className="text-xs">NZALI</p>
             </div>
             <button className="flex flex-row items-center rounded-lg gap-3 border bg-gray-50 px-3 py-2 font-semibold text-sky-800 duration-300 hover:bg-sky-900 hover:text-gray-50">
-              Dowload CV
+              <a href={profile.cvPath}>Télécharger CV</a>
               <svg
                 className="h-6 w-6 fill-current"
                 height="100"
