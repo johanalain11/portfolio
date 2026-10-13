@@ -7,7 +7,7 @@ import {
   useSpring,
   MotionValue,
 } from "motion/react";
-
+import Image from 'next/image';
 
 
 export const HeroParallax = ({
@@ -57,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref} id='designs'
-      className="h-[265vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:500px] [transform-style:preserve-3d]"
+      className="h-[265vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto perspective-normal transform-3d"
     >
       <Header />
       <motion.div
@@ -142,11 +142,11 @@ export const ProductCard = ({
         href={product.link}
         className="block group-hover/product:shadow-2xl "
       >
-        <img
+        <Image
           src={product.thumbnail}
           height="400"
           width="400"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover object-top-left absolute h-full w-full inset-0"
           alt={product.title}
         />
       </a>

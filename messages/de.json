@@ -1,1 +1,176 @@
-{}
+{
+  "Navbar": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experiences": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "contactButton": "Kontaktiere mich",
+    "logoAlt": "Logo"
+  },
+  "Profile": {
+    "role": "Softwareingenieur"
+  },
+  "Hero": {
+    "iam": "Ich bin",
+    "words": [
+      "Frontend Webentwickler..",
+      "Softwareingenieur..",
+      "Mobilentwickler..",
+      "Grafikdesigner..",
+      "UX/UI Designer..",
+      "DevSecOps Enthusiast.."
+    ],
+    "description": "Ich entwickle sichere, skalierbare und leistungsstarke Lösungen.",
+    "contact": "Kontaktiere mich",
+    "cv": "Lebenslauf",
+    "openToWork": "#Open to work",
+    "experienceYears": "3 Jahre",
+    "experienceLabel": "Erfahrung",
+    "proProjectsCount": "4+",
+    "proProjectsLabel": "Professionelle Projekte",
+    "personalProjectsCount": "+10",
+    "personalProjectsLabel": "Persönliche Projekte"
+  },
+  "About": {
+    "sectionTitle": "Über mich",
+    "headline": "Jenseits von Code, das Engineering.",
+    "paragraph1": "Ich bin ein <b>Entwickler</b>, der sich auf die Entwicklung sicherer und leistungsstarker Lösungen konzentriert. Ich lerne durch tun – indem ich komplexe Konzepte durch praktische Projekte statt durch isoliertes Studium verinnerliche.",
+    "paragraph2": "Mein Hauptfokus liegt auf Web- und Mobilentwicklung, Software-Qualitätssicherung (QA) und Security-by-Design. Mit einem Bachelor in Informatik (Schwerpunkt Systemsicherheit) der Universität Yaoundé I verbinde ich eine solide akademische Basis mit <b>3 Jahren praktischer Erfahrung vor Ort.</b>",
+    "paragraph3": "Ich beherrsche moderne Softwaretechnologien, Datenbanken und grundlegende DevOps-Praxen unter Linux und Windows. <b>Ich liebe die Herausforderung</b>, schnelle, zuverlässige, strukturierte und sichere Anwendungen von Anfang an zu entwerfen.",
+    "downloadCv": "Lebenslauf herunterladen"
+  },
+  "Skills": {
+    "sectionTitle": "Fähigkeiten",
+    "heading": "Meine technische Umgebung",
+    "description": "Die Technologien und Praktiken, die ich zum Entwerfen, Entwickeln und Warten von Softwareanwendungen verwende.",
+    "categories": {
+      "languages": {
+        "title": "Programmiersprachen",
+        "description": "Die Grundlagen der Anwendungsentwicklung."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "Barrierefreie und wartbare Benutzeroberflächen."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Geschäftslogik und Anwendungsdienste."
+      },
+      "databases": {
+        "title": "Datenbanken",
+        "description": "Datenpersistenz und -verwaltung."
+      },
+      "graphicDesign": {
+        "title": "Grafikdesign",
+        "description": "Schnittstellen und Visuals, die überzeugen."
+      },
+      "toolsSecurity": {
+        "title": "Werkzeuge und Sicherheit",
+        "description": "Kollaborative Entwicklung und Automatisierung."
+      }
+    }
+  },
+  "Experience": {
+    "sectionSubtitle": "Beruflicher Werdegang",
+    "sectionTitle": "Meine Erfahrung",
+    "sectionDescription": "Mein Weg in der Softwareentwicklung, die Projekte, zu denen ich beigetragen habe, und die angewandten Fähigkeiten.",
+    "present": "Heute",
+    "stackLabel": "Stack",
+    "techStackLabel": "Verwendete Technologien",
+    "items": {
+      "sie2": {
+        "role": "Webentwickler",
+        "organization": "MINEPDED",
+        "description": "Mitwirkung an der Entwicklung des Umweltinformationssystems der zweiten Generation (SIE2).",
+        "responsibilities": [
+          "Entwicklung von Web-Schnittstellen, die an verschiedene Bildschirmformate angepasst sind.",
+          "Mitwirkung beim Design und der Verbesserung der Benutzererfahrung.",
+          "Beitrag zur Anpassung der Benutzeroberfläche an die Bedürfnisse der Benutzer."
+        ]
+      },
+      "rccm": {
+        "role": "Professioneller IT-Praktikant",
+        "organization": "OHADA/MINJUSTICE",
+        "description": "Unterstützung des Projektmanagements im Rahmen des Modernisierungsprojekts des Handels- und Mobiliarkreditregisters (RCCM) in Kamerun.",
+        "responsibilities": [
+          "Laden historischer Daten in die RCCM-OHADA-Software mithilfe eines automatisierten Skripts.",
+          "Überwachung eines Dateneingabeteams, Kontrolle und Änderung historischer Daten.",
+          "Behebung von Problemen bei automatisierten Prozessen, wodurch Ausfallzeiten um 20 % reduziert wurden.",
+          "Mitwirkung am Entwurf und der Implementierung der Datenbank für fehlende Dokumente in RCCM-Akten."
+        ]
+      },
+      "patnuc": {
+        "role": "Programmieranalyst & Testingenieur",
+        "organization": "PATNUC/ MINADER/ MINEPIA",
+        "description": "Teilnahme an der Entwicklung und Bereitstellung der digitalen Informationssystemplattform für agrarische und geografische Statistiken im Rahmen von PATNUC.",
+        "responsibilities": [
+          "Mitwirkung am UML-Design und der Modellierung des Erfassungssystems (unter Verwendung von Kobo Tools), der Berichterstattung, Verarbeitung und Veröffentlichung.",
+          "Teilnahme an Funktionstests der SINSAH-Plattform, wodurch Fehler in der Produktion um 30 % reduziert wurden.",
+          "Teilnahme am Schulungsworkshop für Trainer der SINSAH-Plattform."
+        ]
+      },
+      "gbc": {
+        "role": "Praktikant für mobile Entwicklung",
+        "organization": "Gold Telecom",
+        "description": "Entwicklung einer mobilen Banking-Kollektionsanwendung für Mikrofinanzinstitute: Gold Bank Collection.",
+        "responsibilities": [
+          "Entwicklung und Wartung der Anwendung in Android Studio (Java) mit einer SQLite-Datenbank.",
+          "Testen und Debuggen der Anwendung, wodurch Bankgeschäfte um 20 % verbessert wurden.",
+          "Verfassen der technischen Dokumentation."
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "sectionSubtitle": "Projekte",
+    "sectionTitle": "Projekte, konkrete Lösungen.",
+    "sectionDescription": "Eine Auswahl von Projekten, die meinen Ansatz zur Softwareentwicklung, meine technischen Entscheidungen und meine Fähigkeit zur Entwicklung wartbarer Anwendungen veranschaulichen.",
+    "featuredBadge": "Ausgewähltes Projekt",
+    "problemLabel": "Gelöstes Problem",
+    "solutionLabel": "Technischer Ansatz",
+    "sourceCode": "Quellcode",
+    "demo": "Live-Demo",
+    "techAriaLabel": "Verwendete Technologien für {title}",
+    "items": {
+      "employeeManagement": {
+        "title": "Employee Management App",
+        "description": "Angular-Anwendung zur Verwaltung von Mitarbeitern, Formularen und Urlaubsanträgen.",
+        "problem": "Vereinfachung routinemäßiger Personalverwaltungsaufgaben über eine zentralisierte Benutzeroberfläche.",
+        "solution": "Entwicklung einer Verwaltungsschnittstelle mit CRUD-Operationen, reaktiven Formularen und dedizierten Angular-Diensten für die API-Kommunikation."
+      },
+      "jobIn": {
+        "title": "JOB-in",
+        "description": "Frontend-Plattform zur Verbindung von Bewerbern und Unternehmen für die Jobsuche und das Rekrutierungsmanagement.",
+        "problem": "Bereitstellung einer Benutzeroberfläche, die die Bedürfnisse von Kandidaten und Unternehmen auf einer einzigen Plattform trennt.",
+        "solution": "Entwurf einer React-Anwendung, die um einen öffentlichen Bereich, einen Kandidatenbereich und einen Unternehmensbereich herum aufgebaut ist, mit maßgeschneiderten Benutzeroberflächen und Abläufen für jedes Profil."
+      },
+      "ecommerceAngular": {
+        "title": "Ecommerce Angular",
+        "description": "Frontend-E-Commerce-Anwendung zum Durchsuchen von Produkten und Verwalten eines Warenkorbs.",
+        "problem": "Einrichtung eines einfachen Kaufprozesses mit Produktkatalog und Übersicht ausgewählter Artikel.",
+        "solution": "Nutzung von FakeStoreAPI-Daten, Anzeige von Produkten und Zentralisierung der Warenkorbverwaltung in einem Angular-Dienst mit Berechnung von Gesamtmenge und -preis."
+      },
+      "vatecedi": {
+        "title": "Vatecedi",
+        "description": "Python-Anwendung zur Berechnung statistischer Maße für diskrete oder stetige Datenreihen.",
+        "problem": "Erleichterung der Berechnung deskriptiver statistischer Maße aus Populationshäufigkeiten.",
+        "solution": "Entwicklung von Berechnungsfunktionen und einer grafischen Benutzeroberfläche zur Ermittlung von Maßen der zentralen Tendenz und Streuung, mit Unterstützung für die Terminalnutzung."
+      }
+    }
+  },
+  "Contact": {
+    "sectionSubtitle": "Kontakt",
+    "heading": "Lassen Sie uns etwas Nützliches aufbauen.",
+    "description": "Suchen Sie einen Entwickler, der zur Konzeption und Weiterentwicklung von Softwarelösungen beitragen kann? Ich freue mich darauf, mich über Ihre Projekte und Bedürfnisse auszutauschen.",
+    "contactButton": "Kontaktieren Sie mich",
+    "cvButton": "Lebenslauf",
+    "githubSrOnly": "GitHub-Profil öffnen",
+    "linkedinSrOnly": "LinkedIn-Profil öffnen",
+    "emailLabel": "E-Mail"
+  },
+  "Footer": {
+    "rightsReserved": "Alle Rechte vorbehalten.",
+    "backToTop": "Nach oben ↑"
+  }
+}

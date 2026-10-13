@@ -12,20 +12,25 @@ import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 items-center justify-center flex-col overflow-hidden w-full">
-      <div className="w-full">
-        <NavbarComponent />
+    <>
+      <NavbarComponent />
+
+      <main
+        id="main-content"
+        className="relative w-full overflow-hidden bg-black-100"
+      >
         <Hero />
         <About />
         <Skills />
         <Experience />
         <Projects />
-        {/* <Designs /> */}
         {/* <Engineering /> */}
         <Contact />
-        <Footer />
-        <Analytics />
-      </div>
-    </main>
+      </main>
+
+      <Footer />
+
+      <Analytics />
+    </>
   );
 }

@@ -1,47 +1,117 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import "../globals.css";
-import { cn } from "@/lib/utils";
-import { i18n } from "../../i18n.config";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono, Inter } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import '../globals.css';
+import { cn } from '@/lib/utils';
+import { i18n, type Locale } from '../../i18n.config';
+import { notFound } from 'next/navigation';
+import { getSiteUrl } from '@/lib/site-url';
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+const siteUrl = getSiteUrl();
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: {
-    default: 'Johan Alain NZALI KENGMEGNIE | Developper & Software Engineer',
-    template: '%s | Johan Alain',
-  },
-  description: "Portfolio de Johan Alain NZALI KENGMEGNIE, développeur logiciel spécialisé dans les applications web, les interfaces attrayantes, maintenables et la conception logicielle.",
-  applicationName: 'Portfolio de Johan NZALI',
-  openGraph: {
-    type: 'website',
-    locale: 'fr_FR',
-    title: 'Johan Alain NZALI KENGMEGNIE | Developper & Software Engineer',
+const seoContent: Record<
+  Locale,
+  {
+    title: string;
+    description: string;
+    ogLocale: string;
+  }
+> = {
+  fr: {
+    title: 'Johan Alain NZALI KENGMEGNIE | Développeur & Ingénieur logiciel',
     description:
-      'Découvrez mes expériences, mes projets et mes compétences techniques.',
-    siteName: 'Portfolio de Johan Alain',
+      'Portfolio de Johan Alain NZALI KENGMEGNIE, développeur logiciel spécialisé dans les applications web et mobiles, l’architecture applicative et la qualité logicielle.',
+    ogLocale: 'fr_FR',
   },
 
-  robots: {
-    index: true,
-    follow: true,
+  en: {
+    title: 'Johan Alain NZALI KENGMEGNIE | Developer & Software Engineer',
+    description:
+      'Portfolio of Johan Alain NZALI KENGMEGNIE, software engineer focused on web and mobile development, application architecture and software quality.',
+    ogLocale: 'en_US',
+  },
+
+  de: {
+    title: 'Johan Alain NZALI KENGMEGNIE | Developer & Software Engineer',
+    description:
+      'Portfolio von Johan Alain NZALI KENGMEGNIE mit Schwerpunkt auf Web- und Mobile-Entwicklung, Softwarearchitektur und Softwarequalität.',
+    ogLocale: 'de_DE',
   },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!i18n.locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  const currentLocale = locale as Locale;
+  const content = seoContent[currentLocale];
+
+  const localizedUrl = `/${currentLocale}`;
+
+  return {
+    metadataBase: siteUrl,
+
+    title: {
+      absolute: content.title,
+    },
+
+    description: content.description,
+
+    applicationName: 'Portfolio de Johan NZALI',
+
+    alternates: {
+      canonical: localizedUrl,
+
+      languages: {
+        fr: '/fr',
+        en: '/en',
+        de: '/de',
+        'x-default': '/fr',
+      },
+    },
+
+    openGraph: {
+      type: 'website',
+      locale: content.ogLocale,
+      url: localizedUrl,
+      title: content.title,
+      description: content.description,
+      siteName: 'Johan NZALI | Software Engineer',
+      images: [
+        {
+          url: '/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'Portfolio de Johan Alain NZALI KENGMEGNIE',
+        },
+      ],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -50,15 +120,26 @@ export function generateStaticParams() {
 export default async function RootLayout({
   children,
   params,
-}: LayoutProps<"/[locale]">) {
+}: LayoutProps<'/[locale]'>) {
   const { locale } = await params;
+
+  if (!i18n.locales.includes(locale as Locale)) {
+    notFound();
+  }
 
   return (
     <html
       lang={locale}
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      className={cn(
+        'h-full',
+        'antialiased',
+        geistSans.variable,
+        geistMono.variable,
+        'font-sans',
+        inter.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

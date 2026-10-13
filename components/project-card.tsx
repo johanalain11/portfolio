@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import type { Project } from '@/data/projects';
 import './project-card.css';
 
@@ -6,45 +7,57 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const t = useTranslations('Projects');
+  const prefix = `items.${project.translationKey}`;
+
+  const title = t(`${prefix}.title`);
+  const description = t(`${prefix}.description`);
+  const problem = t(`${prefix}.problem`);
+  const solution = t(`${prefix}.solution`);
+
   return (
     <article className="nhost-project text-white">
       <div className="project-glow"></div>
       <div className="project-grid"></div>
       <div className="project-header">
-        <h3 className="brand-text">{project.title}</h3>
+        <h3 className="brand-text">{title}</h3>
 
         {project.featured && (
           <span className="bg-primary/10 text-primary shrink-0 rounded-full px-3 py-1 text-xs font-medium">
-            Projet phare
+            {t('featuredBadge')}
           </span>
         )}
       </div>
 
       <div className="project-body">
         <p className="repo-description">
-          {project.description}
+          {description}
         </p>
 
         <div className="mt-6">
-          <h4 className="repo-title">Problème traité<span className="blinking-cursor"></span></h4>
-          
+          <h4 className="repo-title">
+            {t('problemLabel')}
+            <span className="blinking-cursor"></span>
+          </h4>
 
           <p className="text-muted-foreground mt-2 text-sm leading-6">
-            {project.problem}
+            {problem}
           </p>
         </div>
 
         <div className="mt-5">
-          <h4 className="repo-title">Approche technique<span className="blinking-cursor"></span></h4>
-          
+          <h4 className="repo-title">
+            {t('solutionLabel')}
+            <span className="blinking-cursor"></span>
+          </h4>
 
           <p className="text-muted-foreground mt-2 text-sm leading-6">
-            {project.solution}
+            {solution}
           </p>
         </div>
 
         <ul
-          aria-label={`Technologies utilisées pour ${project.title}`}
+          aria-label={t('techAriaLabel', { title })}
           className="tag-wrapper"
         >
           {project.technologies.map((technology) => (
@@ -65,8 +78,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               className="hover:text-primary text-sm font-medium underline underline-offset-4"
             >
-              Code source
-              <span className="sr-only"> — {project.title}</span>
+              {t('sourceCode')}
+              <span className="sr-only"> — {title}</span>
             </a>
           )}
 
@@ -77,8 +90,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               className="hover:text-primary text-sm font-medium underline underline-offset-4"
             >
-              Démonstration
-              <span className="sr-only"> — {project.title}</span>
+              {t('demo')}
+              <span className="sr-only"> — {title}</span>
             </a>
           )}
         </div>

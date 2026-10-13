@@ -1,1 +1,176 @@
-{}
+{
+  "Navbar": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experiences": "Expériences",
+    "projects": "Projets",
+    "contact": "Contact",
+    "contactButton": "Me contacter",
+    "logoAlt": "logo"
+  },
+  "Profile": {
+    "role": "Ingénieur Logiciel"
+  },
+  "Hero": {
+    "iam": "Je suis",
+    "words": [
+      "Développeur Web Frontend..",
+      "Ingénieur Logiciel..",
+      "Développeur Mobile..",
+      "Designer graphique..",
+      "UX/UI Designer..",
+      "DevSecOps Enthusiast.."
+    ],
+    "description": "Je développe des solutions sécurisées, évolutives et performantes.",
+    "contact": "Me contacter",
+    "cv": "CV",
+    "openToWork": "#Open to work",
+    "experienceYears": "3 ans",
+    "experienceLabel": "d'expérience",
+    "proProjectsCount": "4+",
+    "proProjectsLabel": "Projets professionnels",
+    "personalProjectsCount": "+10",
+    "personalProjectsLabel": "Projets personnels"
+  },
+  "About": {
+    "sectionTitle": "À Propos",
+    "headline": "Au-delà du code, l'ingénierie.",
+    "paragraph1": "Je suis un <b>développeur</b> axé sur la création de solutions sécurisées et performantes. J'apprends par la pratique—en assimilant les concepts complexes à travers des projets concrets plutôt que par une étude isolée.",
+    "paragraph2": "Mon objectif principal est le développement web & mobile, la qualité logicielle (QA) et la sécurité dès la conception. Titulaire d'une Licence en Informatique (option Sécurité des Systèmes) de l'Université de Yaoundé I, j'associe de solides bases académiques à <b>3 ans d'expérience pratique sur le terrain.</b>",
+    "paragraph3": "Je maîtrise les technologies logicielles modernes, les bases de données et les bases des pratiques DevOps sous Linux et Windows. <b>J'aime relever le défi</b> de concevoir des applications rapides, fiables, structurées et sécurisées dès leur développement.",
+    "downloadCv": "Télécharger CV"
+  },
+  "Skills": {
+    "sectionTitle": "Compétences",
+    "heading": "Mon environnement technique",
+    "description": "Les technologies et pratiques que j'utilise pour concevoir, développer et maintenir des applications logicielles.",
+    "categories": {
+      "languages": {
+        "title": "Langages",
+        "description": "Les bases du développement applicatif."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "Des interfaces accessibles et maintenables."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "La logique métier et les services applicatifs."
+      },
+      "databases": {
+        "title": "Bases de données",
+        "description": "La persistance et la gestion des données."
+      },
+      "graphicDesign": {
+        "title": "Design Graphique",
+        "description": "Les interfaces et visuels qui convertissent."
+      },
+      "toolsSecurity": {
+        "title": "Outils et sécurité",
+        "description": "Le développement collaboratif et l’automatisation."
+      }
+    }
+  },
+  "Experience": {
+    "sectionSubtitle": "Parcours professionnel",
+    "sectionTitle": "Mon expérience",
+    "sectionDescription": "Mon parcours dans le développement logiciel, les projets auxquels j'ai contribué et les compétences mises en pratique.",
+    "present": "Aujourd'hui",
+    "stackLabel": "Stack",
+    "techStackLabel": "Technologies utilisées",
+    "items": {
+      "sie2": {
+        "role": "Développeur Web",
+        "organization": "MINEPDED",
+        "description": "Contribution au développement du Système d’information environnementale de deuxième génération (SIE2).",
+        "responsibilities": [
+          "Développer des interfaces web adaptées aux différents formats d’écran.",
+          "Participer à la conception et à l’amélioration de l’expérience utilisateur.",
+          "Contribuer à la personnalisation de l’interface selon les besoins des utilisateurs."
+        ]
+      },
+      "rccm": {
+        "role": "Stagiaire Professionnel en Informatique",
+        "organization": "OHADA/MINJUSTICE",
+        "description": "Contribution à l'assistance à la maitrise d’ouvrage dans le cadre du projet de modernisation du registre du commerce et du crédit mobilier (RCCM) au Cameroun",
+        "responsibilities": [
+          "Chargement de données historiques dans le logiciel RCCM-OHADA à l'aide d'un automate.",
+          "Supervision d'une équipe de saisie, contrôle et modification des données historiques.",
+          "Résolution des problèmes des processus automatisés, réduisant le temps d’arrêt de 20%.",
+          "Participation à la conception et implémentation de la base de données des pièces manquantes des dossiers RCCM."
+        ]
+      },
+      "patnuc": {
+        "role": "Analyste Programmeur & Ingénieur des tests",
+        "organization": "PATNUC/ MINADER/ MINEPIA",
+        "description": "Participation au Développement et déploiement de la plateforme de système d'information numérique des statistiques agro- pastorales et géographiques dans le cadre du PATNUC",
+        "responsibilities": [
+          "Participation à la conception et modélisation UML du système de collecte (à partir de Kobo Tools), de remontée, de traitement et de publication.",
+          "Participation aux tests fonctionnels de la plateforme SINSAH, réduisant les bugs en production de 30%.",
+          "Participation à l'atelier de formation des formateurs de la plateforme SINSAH."
+        ]
+      },
+      "gbc": {
+        "role": "Stagiaire Professionnel en Développement Mobile",
+        "organization": "Gold Telecom",
+        "description": "Développement d'une application mobile de collecte bancaire pour les microfinances: Gold Bank Collection",
+        "responsibilities": [
+          "Développement et maintenance de l'application sur Android Studio (Java) - BD SQLite.",
+          "Tests & débogage de l’application, améliorant les opérations bancaires de 20%.",
+          "Rédaction de la documentation technique."
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "sectionSubtitle": "Réalisations",
+    "sectionTitle": "Des projets, des solutions concrètes.",
+    "sectionDescription": "Une sélection de projets illustrant mon approche du développement logiciel, mes choix techniques et ma capacité à concevoir des applications maintenables.",
+    "featuredBadge": "Projet phare",
+    "problemLabel": "Problème traité",
+    "solutionLabel": "Approche technique",
+    "sourceCode": "Code source",
+    "demo": "Démonstration",
+    "techAriaLabel": "Technologies utilisées pour {title}",
+    "items": {
+      "employeeManagement": {
+        "title": "Employee Management App",
+        "description": "Application Angular de gestion des employés, des formulaires et des demandes de congés.",
+        "problem": "Simplifier les opérations courantes de gestion des employés à travers une interface centralisée.",
+        "solution": "Développer une interface de gestion avec opérations CRUD, formulaires réactifs et services Angular dédiés aux échanges avec une API."
+      },
+      "jobIn": {
+        "title": "JOB-in",
+        "description": "Plateforme frontend de mise en relation entre candidats et entreprises pour la recherche d’emploi et la gestion du recrutement.",
+        "problem": "Proposer une interface qui distingue les besoins des candidats de ceux des entreprises au sein d’une même plateforme.",
+        "solution": "Concevoir une application React organisée autour d’un espace public, d’un espace candidat et d’un espace entreprise, avec des interfaces et des parcours adaptés à chaque profil."
+      },
+      "ecommerceAngular": {
+        "title": "Ecommerce Angular",
+        "description": "Application e-commerce frontend permettant de consulter des produits et de gérer un panier.",
+        "problem": "Mettre en place un parcours d’achat simple avec consultation des produits et récapitulatif des articles sélectionnés.",
+        "solution": "Consommer les données de FakeStoreAPI, afficher les produits et centraliser la gestion du panier dans un service Angular avec calcul de la quantité et du prix total."
+      },
+      "vatecedi": {
+        "title": "Vatecedi",
+        "description": "Application Python de calcul des mesures statistiques pour des séries de données discrètes ou continues.",
+        "problem": "Faciliter le calcul des mesures statistiques descriptives à partir des effectifs d’une population.",
+        "solution": "Développer des fonctions de calcul et une interface graphique permettant d’obtenir des mesures de tendance centrale et de dispersion, avec une possibilité d’utilisation depuis le terminal."
+      }
+    }
+  },
+  "Contact": {
+    "sectionSubtitle": "Contact",
+    "heading": "Construisons quelque chose d'utile.",
+    "description": "Vous recherchez un développeur capable de contribuer à la conception et à l'évolution de solutions logicielles ? Je serai heureux d'échanger sur vos projets et vos besoins.",
+    "contactButton": "Me contacter",
+    "cvButton": "CV",
+    "githubSrOnly": "ouvrir le profil GitHub",
+    "linkedinSrOnly": "ouvrir le profil LinkedIn",
+    "emailLabel": "E-mail"
+  },
+  "Footer": {
+    "rightsReserved": "Tous droits réservés.",
+    "backToTop": "Retour en haut ↑"
+  }
+}

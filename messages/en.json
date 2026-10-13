@@ -1,1 +1,176 @@
-{}
+{
+  "Navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "experiences": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contactButton": "Contact Me",
+    "logoAlt": "logo"
+  },
+  "Profile": {
+    "role": "Software Engineer"
+  },
+  "Hero": {
+    "iam": "I am",
+    "words": [
+      "Frontend Web Developer..",
+      "Software Engineer..",
+      "Mobile Developer..",
+      "Graphic Designer..",
+      "UX/UI Designer..",
+      "DevSecOps Enthusiast.."
+    ],
+    "description": "I develop secure, scalable, and high-performance solutions.",
+    "contact": "Contact Me",
+    "cv": "CV",
+    "openToWork": "#Open to work",
+    "experienceYears": "3 years",
+    "experienceLabel": "of experience",
+    "proProjectsCount": "4+",
+    "proProjectsLabel": "Professional projects",
+    "personalProjectsCount": "+10",
+    "personalProjectsLabel": "Personal projects"
+  },
+  "About": {
+    "sectionTitle": "About",
+    "headline": "Beyond code, engineering.",
+    "paragraph1": "I am a <b>developer</b> focused on building secure and high-performance solutions. I learn by doing—mastering complex concepts through real-world projects rather than isolated study.",
+    "paragraph2": "My main focus is web & mobile development, software quality assurance (QA), and security-by-design. Holding a Bachelor's Degree in Computer Science (Systems Security option) from the University of Yaoundé I, I combine a strong academic foundation with <b>3 years of hands-on field experience.</b>",
+    "paragraph3": "I master modern software technologies, databases, and foundational DevOps practices under Linux and Windows. <b>I love the challenge</b> of designing fast, reliable, structured, and secure applications from the ground up.",
+    "downloadCv": "Download CV"
+  },
+  "Skills": {
+    "sectionTitle": "Skills",
+    "heading": "My Technical Environment",
+    "description": "The technologies and practices I use to design, develop, and maintain software applications.",
+    "categories": {
+      "languages": {
+        "title": "Languages",
+        "description": "The fundamentals of application development."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "Accessible and maintainable interfaces."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Business logic and application services."
+      },
+      "databases": {
+        "title": "Databases",
+        "description": "Data persistence and management."
+      },
+      "graphicDesign": {
+        "title": "Graphic Design",
+        "description": "Interfaces and visuals that convert."
+      },
+      "toolsSecurity": {
+        "title": "Tools & Security",
+        "description": "Collaborative development and automation."
+      }
+    }
+  },
+  "Experience": {
+    "sectionSubtitle": "Professional Background",
+    "sectionTitle": "My Experience",
+    "sectionDescription": "My journey in software development, the projects I've contributed to, and the skills put into practice.",
+    "present": "Present",
+    "stackLabel": "Stack",
+    "techStackLabel": "Technologies used",
+    "items": {
+      "sie2": {
+        "role": "Web Developer",
+        "organization": "MINEPDED",
+        "description": "Contributed to the development of the second-generation Environmental Information System (SIE2).",
+        "responsibilities": [
+          "Develop web interfaces adapted to various screen sizes.",
+          "Participate in the design and improvement of the user experience.",
+          "Contribute to interface customization based on user needs."
+        ]
+      },
+      "rccm": {
+        "role": "Professional IT Intern",
+        "organization": "OHADA/MINJUSTICE",
+        "description": "Contributed to project management assistance as part of the modernization project for the Trade and Personal Property Credit Register (RCCM) in Cameroon.",
+        "responsibilities": [
+          "Loaded historical data into the RCCM-OHADA software using an automated script.",
+          "Supervised a data entry team, controlling and modifying historical data.",
+          "Resolved automated process issues, reducing downtime by 20%.",
+          "Participated in the design and implementation of the database for missing documents in RCCM files."
+        ]
+      },
+      "patnuc": {
+        "role": "Programmer Analyst & Test Engineer",
+        "organization": "PATNUC/ MINADER/ MINEPIA",
+        "description": "Participated in the development and deployment of the digital information system platform for agro-pastoral and geographical statistics under PATNUC.",
+        "responsibilities": [
+          "Participated in the UML design and modeling of the collection system (using Kobo Tools), reporting, processing, and publication.",
+          "Participated in functional testing of the SINSAH platform, reducing production bugs by 30%.",
+          "Participated in the train-the-trainer workshop for the SINSAH platform."
+        ]
+      },
+      "gbc": {
+        "role": "Mobile Development Professional Intern",
+        "organization": "Gold Telecom",
+        "description": "Developed a mobile banking collection application for microfinance institutions: Gold Bank Collection.",
+        "responsibilities": [
+          "Developed and maintained the application on Android Studio (Java) with an SQLite database.",
+          "Tested & debugged the application, improving banking operations by 20%.",
+          "Wrote technical documentation."
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "sectionSubtitle": "Portfolio",
+    "sectionTitle": "Projects, concrete solutions.",
+    "sectionDescription": "A selection of projects illustrating my approach to software development, my technical choices, and my ability to design maintainable applications.",
+    "featuredBadge": "Featured Project",
+    "problemLabel": "Addressed Problem",
+    "solutionLabel": "Technical Approach",
+    "sourceCode": "Source Code",
+    "demo": "Live Demo",
+    "techAriaLabel": "Technologies used for {title}",
+    "items": {
+      "employeeManagement": {
+        "title": "Employee Management App",
+        "description": "Angular application for managing employees, forms, and leave requests.",
+        "problem": "Simplify routine employee management operations through a centralized interface.",
+        "solution": "Develop a management interface with CRUD operations, reactive forms, and dedicated Angular services for API communication."
+      },
+      "jobIn": {
+        "title": "JOB-in",
+        "description": "Frontend platform connecting candidates and companies for job searching and recruitment management.",
+        "problem": "Provide an interface that distinguishes candidate needs from company needs within a single platform.",
+        "solution": "Design a React application organized around a public space, a candidate space, and a company space, with tailored interfaces and user flows for each profile."
+      },
+      "ecommerceAngular": {
+        "title": "Ecommerce Angular",
+        "description": "Frontend e-commerce application for browsing products and managing a shopping cart.",
+        "problem": "Set up a simple purchasing journey with product browsing and a summary of selected items.",
+        "solution": "Consume data from FakeStoreAPI, display products, and centralize cart management in an Angular service with calculation of total quantity and price."
+      },
+      "vatecedi": {
+        "title": "Vatecedi",
+        "description": "Python application for calculating statistical measures for discrete or continuous data series.",
+        "problem": "Facilitate the calculation of descriptive statistical measures from population frequencies.",
+        "solution": "Develop calculation functions and a graphical interface to obtain measures of central tendency and dispersion, with terminal usage support."
+      }
+    }
+  },
+  "Contact": {
+    "sectionSubtitle": "Contact",
+    "heading": "Let's build something useful.",
+    "description": "Are you looking for a developer capable of contributing to the design and evolution of software solutions? I would be happy to discuss your projects and needs.",
+    "contactButton": "Contact me",
+    "cvButton": "Resume",
+    "githubSrOnly": "open GitHub profile",
+    "linkedinSrOnly": "open LinkedIn profile",
+    "emailLabel": "E-mail"
+  },
+  "Footer": {
+    "rightsReserved": "All rights reserved.",
+    "backToTop": "Back to top ↑"
+  }
+}

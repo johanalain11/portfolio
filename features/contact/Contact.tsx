@@ -1,11 +1,12 @@
+import { useTranslations } from 'next-intl';
 import { profile } from '@/data/profile';
-import { motion } from "motion/react";
-import { LampContainer } from "../../components/ui/lamp";
-import { Button } from "../../components/ui/moving-border";
-import { FaLocationArrow } from "react-icons/fa6";
+import { Button } from '../../components/ui/moving-border';
+import { FaLocationArrow } from 'react-icons/fa6';
 import { FaDownload } from 'react-icons/fa6';
 
 export function Contact() {
+  const t = useTranslations('Contact');
+
   return (
     <section
       id="contact"
@@ -15,20 +16,18 @@ export function Contact() {
       <div className="mx-auto max-w-4xl">
         <div className="rounded-2xl border border-border bg-muted/30 p-8 sm:p-12 shadow-xl shadow-blue-800 hover:shadow-sm transition ease-in-out duration-300">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
-            Contact
+            {t('sectionSubtitle')}
           </p>
 
           <h2
             id="contact-title"
             className="max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            Construisons quelque chose d&apos;utile.
+            {t('heading')}
           </h2>
 
           <p className="mt-5 max-w-2xl leading-7 text-muted-foreground">
-            Vous recherchez un développeur capable de contribuer à la
-            conception et à l&apos;évolution de solutions logicielles ?
-            Je serai heureux d&apos;échanger sur vos projets et vos besoins.
+            {t('description')}
           </p>
 
           <div className="mt-8 flex gap-4 flex-row">
@@ -36,13 +35,17 @@ export function Contact() {
               borderRadius="1.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 gap-3 hover:bg-white hover:text-black transition ease-in-out duration-300"
             >
-              <a href={`mailto:${profile.email}`} className=' flex gap-3 items-center'>Me contacter <FaLocationArrow/></a>
+              <a href={`mailto:${profile.email}`} className="flex gap-3 items-center">
+                {t('contactButton')} <FaLocationArrow />
+              </a>
             </Button>
             <Button
               borderRadius="1.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 gap-3 hover:bg-white hover:text-black transition ease-in-out duration-300"
             >
-              <a href={profile.cvPath} download className='hover:scale-110 flex gap-3 items-center'>CV <FaDownload/></a>
+              <a href={profile.cvPath} download className="hover:scale-110 flex gap-3 items-center">
+                {t('cvButton')} <FaDownload />
+              </a>
             </Button>
           </div>
 
@@ -60,7 +63,7 @@ export function Contact() {
                   className="underline underline-offset-4 hover:text-primary"
                 >
                   GitHub
-                  <span className="sr-only"> — ouvrir le profil GitHub</span>
+                  <span className="sr-only"> — {t('githubSrOnly')}</span>
                 </a>
               </li>
 
@@ -72,10 +75,7 @@ export function Contact() {
                   className="underline underline-offset-4 hover:text-primary"
                 >
                   LinkedIn
-                  <span className="sr-only">
-                    {' '}
-                    — ouvrir le profil LinkedIn
-                  </span>
+                  <span className="sr-only"> — {t('linkedinSrOnly')}</span>
                 </a>
               </li>
 
@@ -84,7 +84,7 @@ export function Contact() {
                   href={`mailto:${profile.email}`}
                   className="underline underline-offset-4 hover:text-primary"
                 >
-                  E-mail
+                  {t('emailLabel')}
                 </a>
               </li>
             </ul>

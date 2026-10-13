@@ -7,9 +7,8 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-
+import Image from 'next/image';
 import React, { useRef, useState } from "react";
-
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -68,7 +67,6 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   return (
     <motion.div
       ref={ref}
-      // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
       className={cn("sticky inset-x-0 top-20 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
@@ -103,7 +101,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
+        "relative z-60 mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
         visible && "bg-neutral-950/80",
         className,
       )}
@@ -120,7 +118,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm ml-8 font-medium text-zinc-600 transition duration-200   hover:text-zinc-800 lg:flex lg:space-x-2",
+        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm ml-8 font-medium text-zinc-300 transition duration-200 hover:text-zinc-600 lg:flex lg:space-x-2",
         className,
       )}
     >
@@ -138,7 +136,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
               className="absolute inset-0 h-full w-full rounded-full bg-neutral-800"
             />
           )}
-          <span className="relative z-20 text-gray-600">{item.name}</span>
+          <span className="relative z-20 text-gray-400">{item.name}</span>
         </a>
       ))}
     </motion.div>
@@ -205,7 +203,7 @@ export const MobileNavMenu = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg  px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] bg-neutral-950",
+            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] bg-neutral-950",
             className,
           )}
         >
@@ -224,9 +222,9 @@ export const MobileNavToggle = ({
   onClick: () => void;
 }) => {
   return isOpen ? (
-    <IconX className="text-white" onClick={onClick} />
+    <IconX className="text-white cursor-pointer" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-white" onClick={onClick} />
+    <IconMenu2 className="text-white cursor-pointer" onClick={onClick} />
   );
 };
 
@@ -236,13 +234,14 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-8 flex items-center space-x-2 px-2 py-1 text-sm font-normal"
     >
-      <img
-        src="./LogoJ.png"
+      <Image
+        src={"/icons/LogoJ.png"}
         alt="logo"
         width={33}
-        height={33} className=" bg-white rounded-lg p-1"
+        height={33}
+        className="bg-white rounded-lg p-1"
       />
-      <span className="font-bold text-white">JOHAN NZALI</span>
+      <span className="font-bold text-gray-200">JOHAN NZALI</span>
     </a>
   );
 };

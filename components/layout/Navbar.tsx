@@ -1,87 +1,99 @@
 "use client";
-import React from 'react';
-import { Navbar,NavBody,NavItems,MobileNav,NavbarLogo,NavbarButton,MobileNavHeader,MobileNavToggle,MobileNavMenu,} from "@/components/ui/resizable-navbar";
-import { useState } from "react";
+import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { 
+  Navbar, 
+  NavBody, 
+  NavItems, 
+  MobileNav, 
+  NavbarLogo, 
+  NavbarButton, 
+  MobileNavHeader, 
+  MobileNavToggle, 
+  MobileNavMenu 
+} from "@/components/ui/resizable-navbar";
+import { LocaleSwitcher } from '@/components/locale-switcher';
 
 const NavbarComponent = () => {
+  const t = useTranslations('Navbar');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     {
-      name: "À propos",
+      name: t('about'),
       link: "#about",
     },
     {
-      name: "Compétences",
+      name: t('skills'),
       link: "#skills",
     },
     {
-      name: "Expériences",
+      name: t('experiences'),
       link: "#experiences",
     },
     {
-      name: "Projets",
+      name: t('projects'),
       link: "#projects",
     },
-    // {
-    //   name: "Designs",
-    //   link: "#designs",
-    // },
     {
-      name: "Contact",
+      name: t('contact'),
       link: "#contact",
     },
   ];
- 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <Navbar className='absolute fixed top-3 md:top-10'>
-        {/* Desktop Navigation */}
-        <NavBody>
-          <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Me contacter</NavbarButton>
-          </div>
-        </NavBody>
- 
-        {/* Mobile Navigation */}
-        <MobileNav>
-          <MobileNavHeader>
-            <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
-          </MobileNavHeader>
- 
-          <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          >
-            {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </a>
-            ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-50"
-              >
-                Me contacter
-              </NavbarButton>
-            </div>
-          </MobileNavMenu>
-        </MobileNav>
-      </Navbar>
-  )
-}
+    <Navbar className="absolute fixed top-3 md:top-10">
+      {/* Desktop Navigation */}
+      <NavBody>
+        <NavbarLogo />
+        <NavItems items={navItems} />
+        <div className="flex items-center gap-2">
+          {/* <LocaleSwitcher /> */}
+          <NavbarButton href="#contact" variant="primary">
+            {t('contactButton')}
+          </NavbarButton>
+        </div>
+      </NavBody>
 
-export default NavbarComponent
+      {/* Mobile Navigation */}
+      <MobileNav>
+        <MobileNavHeader>
+          <NavbarLogo />
+          <MobileNavToggle
+            isOpen={isMobileMenuOpen}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          />
+        </MobileNavHeader>
+
+        <MobileNavMenu
+          isOpen={isMobileMenuOpen}
+          onClose={() => setIsMobileMenuOpen(false)}
+        >
+          {navItems.map((item, idx) => (
+            <a
+              key={`mobile-link-${idx}`}
+              href={item.link}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="relative text-neutral-300"
+            >
+              <span className="block">{item.name}</span>
+            </a>
+          ))}
+          <div className="flex w-full flex-col gap-4">
+            {/* <LocaleSwitcher /> */}
+            <NavbarButton
+              href="#contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              variant="primary"
+              className="w-50"
+            >
+              {t('contactButton')}
+            </NavbarButton>
+          </div>
+        </MobileNavMenu>
+      </MobileNav>
+    </Navbar>
+  );
+};
+
+export default NavbarComponent;

@@ -1,12 +1,16 @@
+'use client';
+
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import SectionTitle from '../../components/layout/section-title';
 import './about.css';
 import { cn } from "@/lib/utils";
 import { profile } from '@/data/profile';
 
-
 export const About = () => {
-  return(
+  const t = useTranslations('About');
+
+  return (
     <div className="relative flex flex-col gap-6 bg-taupe-950 p-10 md:p-24 lg:px-36" id='about'>
       <div
         className={cn(
@@ -16,37 +20,29 @@ export const About = () => {
           "bg-[linear-gradient(to_right,#2b2b2b_0.5px,transparent_1px),linear-gradient(to_bottom,#2b2b2b_0.5px,transparent_1px)]",
         )}
       />
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black mask-[radial-gradient(ellipse_at_center,transparent_10%,#101828)] "></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black mask-[radial-gradient(ellipse_at_center,transparent_10%,#101828)]"></div>
       
-      <SectionTitle title="About"></SectionTitle>
+      <SectionTitle title={t('sectionTitle')} />
       <h2 className="text-5xl font-black text-white z-10">
-        Au-delà du code, l&apos;ingénierie.
+        {t('headline')}
       </h2>
 
       <div className="mt-8 grid gap-12 text-white grid-cols-1 lg:grid-cols-2">
         <div className="text-muted-foreground space-y-5 text-base leading-7 z-10">
           <p>
-            Je suis un <b>développeur</b> axé sur la création de solutions
-            sécurisées et performantes. J&apos;apprends par la pratique—en
-            assimilant les concepts complexes à travers des projets concrets
-            plutôt que par une étude isolée.
+            {t.rich('paragraph1', {
+              b: (chunks) => <strong className="font-bold text-white">{chunks}</strong>,
+            })}
           </p>
-
           <p>
-            Mon objectif principal est le développement web & mobile, la qualité
-            logicielle (QA) et la sécurité dès la conception. Titulaire
-            d&apos;une Licence en Informatique (option Sécurité des Systèmes) de
-            l&apos;Université de Yaoundé I, j&apos;associe de solides bases
-            académiques à près de{' '}
-            <b>3 ans d&apos;expérience pratique sur le terrain.</b>
+            {t.rich('paragraph2', {
+              b: (chunks) => <strong className="font-bold text-white">{chunks}</strong>,
+            })}
           </p>
-
           <p>
-            Je maîtrise les technologies logicielles modernes, les bases de
-            données et les bases des pratiques DevOps sous Linux et Windows.{' '}
-            <b>J&apos;aime relever le défi</b> de concevoir des applications rapides,
-            fiables, structurées et sécurisées dès leur développement.
+            {t.rich('paragraph3', {
+              b: (chunks) => <strong className="font-bold text-white">{chunks}</strong>,
+            })}
           </p>
         </div>
 
@@ -56,8 +52,12 @@ export const About = () => {
               <span className="text-5xl font-bold">Johan</span>
               <p className="text-xs">NZALI</p>
             </div>
-            <button className="flex flex-row items-center rounded-lg gap-3 border bg-gray-50 px-3 py-2 font-semibold text-sky-800 duration-300 hover:bg-sky-900 hover:text-gray-50">
-              <a href={profile.cvPath}>Télécharger CV</a>
+            <a 
+              href={profile.cvPath}
+              download
+              className="flex flex-row items-center rounded-lg gap-3 border bg-gray-50 px-3 py-2 font-semibold text-sky-800 duration-300 hover:bg-sky-900 hover:text-gray-50"
+            >
+              <span>{t('downloadCv')}</span>
               <svg
                 className="h-6 w-6 fill-current"
                 height="100"
@@ -73,7 +73,7 @@ export const About = () => {
                   fillRule="evenodd"
                 ></path>
               </svg>
-            </button>
+            </a>
 
             <svg
               className="absolute -right-20 -bottom-0.5 z-10 -my-2 h-48 w-48 fill-gray-50 stroke-sky-900 duration-500 group-hover:scale-125"
@@ -101,11 +101,10 @@ export const About = () => {
               ></path>
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default About;

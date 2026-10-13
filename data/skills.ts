@@ -1,45 +1,38 @@
 export interface SkillCategory {
   id: string;
-  title: string;
-  description: string;
+  translationKey: string;
   skills: string[];
 }
 
 export const skillCategories: SkillCategory[] = [
   {
     id: 'languages',
-    title: 'Langages',
-    description: 'Les bases du développement applicatif.',
+    translationKey: 'languages',
     skills: ['TypeScript', 'JavaScript', 'Java', 'Python'],
   },
   {
     id: 'frontend',
-    title: 'Frontend',
-    description: 'Des interfaces accessibles et maintenables.',
+    translationKey: 'frontend',
     skills: ['Angular', 'React', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS'],
   },
   {
     id: 'backend',
-    title: 'Backend',
-    description: 'La logique métier et les services applicatifs.',
+    translationKey: 'backend',
     skills: ['Node.js', 'Spring'],
   },
   {
     id: 'databases',
-    title: 'Bases de données',
-    description: 'La persistance et la gestion des données.',
+    translationKey: 'databases',
     skills: ['PostgreSQL', 'MySQL', 'SQLite'],
   },
   {
-    id: 'egraphic-design',
-    title: 'Design Graphique',
-    description: 'Les interfaces et visuels qui convertissent.',
+    id: 'graphic-design',
+    translationKey: 'graphicDesign',
     skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Figma'],
   },
   {
     id: 'tools-security',
-    title: 'Outils et sécurité',
-    description: 'Le développement collaboratif et l’automatisation.',
+    translationKey: 'toolsSecurity',
     skills: [
       'Git', 'GitHub', 'Docker',
       'Tests logiciels',
