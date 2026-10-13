@@ -76,7 +76,7 @@ export async function generateMetadata({
 
     description: content.description,
     verification: {
-      google: 'googleeed063e8882b799b.html'
+      google: 'B6ZArIQBgEDcmbbn4dxsEfAkPTZgdTpgGSJZ32m8PnY'
     },
 
     applicationName: 'Portfolio de Johan NZALI',
