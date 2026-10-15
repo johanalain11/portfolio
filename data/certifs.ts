@@ -29,16 +29,6 @@ export const certifications: Certification[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg'
   },
   {
-    id: 'fnse1',
-    institution: 'Fortinet',
-    name: 'Fortinet NSE 1 Certified',
-    domains: ['Security'],
-    status: false,
-    percentage: 75,
-    document: undefined,
-    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fortinet.svg'
-  },
-  {
     id: 'py-e1',
     institution: 'CISCO Netacad & Python Institute',
     name: 'Python Essentials 1',
@@ -74,4 +64,25 @@ export const certifications: Certification[] = [
     document: undefined,
     icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/codesignal.svg'
   },
+  {
+    id: 'fnse1',
+    institution: 'Fortinet',
+    name: 'Fortinet NSE 1 Certified',
+    domains: ['Security'],
+    status: false,
+    percentage: 75,
+    document: undefined,
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fortinet.svg'
+  },
+  {
+    id: 'ccst',
+    institution: 'Cisco',
+    name: 'Cisco Certified Support Technician (CCST) Network',
+    domains: ['Network'],
+    status: false,
+    percentage: 50,
+    document: undefined,
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cisco.svg'
+  }
 ];
+
