@@ -8,22 +8,22 @@ export const skillCategories: SkillCategory[] = [
   {
     id: 'languages',
     translationKey: 'languages',
-    skills: ['TypeScript', 'JavaScript', 'Java', 'Python'],
+    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL'],
   },
   {
     id: 'frontend',
     translationKey: 'frontend',
-    skills: ['Angular', 'React', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS'],
+    skills: ['Angular', 'React', 'Next.js', 'Tailwind CSS', 'HTML', 'CSS'],
   },
   {
-    id: 'backend',
-    translationKey: 'backend',
-    skills: ['Node.js', 'Spring'],
+    id: 'backend&db',
+    translationKey: 'backend&db',
+    skills: ['Node.js', 'Spring', 'PostgreSQL', 'MySQL'],
   },
   {
-    id: 'databases',
-    translationKey: 'databases',
-    skills: ['PostgreSQL', 'MySQL', 'SQLite'],
+    id: 'mobile',
+    translationKey: 'mobile',
+    skills: ['Java', 'Android Studio', 'SQLite'],
   },
   {
     id: 'graphic-design',
@@ -35,9 +35,9 @@ export const skillCategories: SkillCategory[] = [
     translationKey: 'toolsSecurity',
     skills: [
       'Git', 'GitHub', 'Docker',
-      'Tests logiciels',
       'CI/CD',
-      'Principes DevSecOps',
+      'DevSecOps',
+      'Tests',
     ],
   },
 ];

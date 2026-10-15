@@ -36,7 +36,7 @@
     "sectionTitle": "About",
     "headline": "Beyond code, engineering.",
     "paragraph1": "I am a <b>developer</b> focused on building secure and high-performance solutions. I learn by doing—mastering complex concepts through real-world projects rather than isolated study.",
-    "paragraph2": "My main focus is web & mobile development, software quality assurance (QA), and security-by-design. Holding a Bachelor's Degree in Computer Science (Systems Security option) from the University of Yaoundé I, I combine a strong academic foundation with <b>3 years of hands-on field experience.</b>",
+    "paragraph2": "My main focus is web & mobile development, software quality assurance (QA), and security-by-design. Holding a Bachelor's Degree in Computer Science (IT Systems Security option), I combine a strong academic foundation with <b>3 years of hands-on field experience.</b>",
     "paragraph3": "I master modern software technologies, databases, and foundational DevOps practices under Linux and Windows. <b>I love the challenge</b> of designing fast, reliable, structured, and secure applications from the ground up.",
     "downloadCv": "Download CV"
   },
@@ -47,27 +47,27 @@
     "categories": {
       "languages": {
         "title": "Languages",
-        "description": "The fundamentals of application development."
+        "description": "The core foundations of clean, scalable and efficient application development."
       },
       "frontend": {
         "title": "Frontend",
-        "description": "Accessible and maintainable interfaces."
+        "description": "Crafting accessible, intuitive and highly maintainable user interfaces."
       },
-      "backend": {
-        "title": "Backend",
-        "description": "Business logic and application services."
+      "backend&db": {
+        "title": "Backend and Databases",
+        "description": "Architecting robust business logic, secure application services and optimised data persistence."
       },
-      "databases": {
-        "title": "Databases",
-        "description": "Data persistence and management."
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "Building seamless, high-performance mobile experiences for iOS and Android."
       },
       "graphicDesign": {
         "title": "Graphic Design",
-        "description": "Interfaces and visuals that convert."
+        "description": "Designing high-converting interfaces and engaging visual assets."
       },
       "toolsSecurity": {
-        "title": "Tools & Security",
-        "description": "Collaborative development and automation."
+        "title": "Tools and Security",
+        "description": "Streamlining collaborative development, automated CI/CD pipelines and robust security practices."
       }
     }
   },
@@ -121,6 +121,11 @@
         ]
       }
     }
+  },
+  "Certifications": {
+    "sectionTitle": "Certifications",
+    "sectionSubtitle": "Degrees & Professional Credentials",
+    "description": "Validating core expertise in systems, networks, and industry methodologies."
   },
   "Projects": {
     "sectionSubtitle": "Portfolio",

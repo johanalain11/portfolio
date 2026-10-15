@@ -44,7 +44,7 @@ export function Skills() {
                     </p>
                   </div>
 
-                  <ul className="mt-5 flex flex-wrap gap-2">
+                  <ul className="mt-1 flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <li
                         key={skill}

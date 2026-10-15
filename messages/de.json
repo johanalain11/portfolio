@@ -36,7 +36,7 @@
     "sectionTitle": "Über mich",
     "headline": "Jenseits von Code, das Engineering.",
     "paragraph1": "Ich bin ein <b>Entwickler</b>, der sich auf die Entwicklung sicherer und leistungsstarker Lösungen konzentriert. Ich lerne durch tun – indem ich komplexe Konzepte durch praktische Projekte statt durch isoliertes Studium verinnerliche.",
-    "paragraph2": "Mein Hauptfokus liegt auf Web- und Mobilentwicklung, Software-Qualitätssicherung (QA) und Security-by-Design. Mit einem Bachelor in Informatik (Schwerpunkt Systemsicherheit) der Universität Yaoundé I verbinde ich eine solide akademische Basis mit <b>3 Jahren praktischer Erfahrung vor Ort.</b>",
+    "paragraph2": "Mein Hauptfokus liegt auf Web- und Mobilentwicklung, Software-Qualitätssicherung und Security-by-Design. Mit einem Bachelor in Informatik (Schwerpunkt: Sicherheit von IT-Systemen) verbinde ich eine fundierte akademische Basis mit <b>3 Jahren praktischer Erfahrung vor Ort.</b>",
     "paragraph3": "Ich beherrsche moderne Softwaretechnologien, Datenbanken und grundlegende DevOps-Praxen unter Linux und Windows. <b>Ich liebe die Herausforderung</b>, schnelle, zuverlässige, strukturierte und sichere Anwendungen von Anfang an zu entwerfen.",
     "downloadCv": "Lebenslauf herunterladen"
   },
@@ -47,27 +47,27 @@
     "categories": {
       "languages": {
         "title": "Programmiersprachen",
-        "description": "Die Grundlagen der Anwendungsentwicklung."
+        "description": "Die essenziellen Grundlagen für eine saubere, skalierbare und effiziente Anwendungsentwicklung."
       },
       "frontend": {
         "title": "Frontend",
-        "description": "Barrierefreie und wartbare Benutzeroberflächen."
+        "description": "Entwicklung von intuitiven, barrierefreien und wartungsfreundlichen Benutzeroberflächen."
       },
-      "backend": {
-        "title": "Backend",
-        "description": "Geschäftslogik und Anwendungsdienste."
+      "backend&db": {
+        "title": "Backend und Datenbanken",
+        "description": "Architektur robuster Geschäftslogik, sicherer Anwendungsdienste und optimierter Datenpersistenz."
       },
-      "databases": {
-        "title": "Datenbanken",
-        "description": "Datenpersistenz und -verwaltung."
+      "mobile": {
+        "title": "Mobile App-Entwicklung",
+        "description": "Entwicklung nahtloser und leistungsstarker nativer oder plattformübergreifender Mobile-Erlebnisse."
       },
       "graphicDesign": {
         "title": "Grafikdesign",
-        "description": "Schnittstellen und Visuals, die überzeugen."
+        "description": "Konzeption konversionsstarker Interfaces und ansprechender visueller Assets."
       },
       "toolsSecurity": {
-        "title": "Werkzeuge und Sicherheit",
-        "description": "Kollaborative Entwicklung und Automatisierung."
+        "title": "Tools und Sicherheit",
+        "description": "Optimierung der kollaborativen Entwicklung, automatisierte CI/CD-Pipelines und robuste Sicherheitsstandards."
       }
     }
   },
@@ -121,6 +121,11 @@
         ]
       }
     }
+  },
+  "Certifications": {
+    "sectionTitle": "Zertifikate",
+    "sectionSubtitle": "Abschlüsse & Technische Qualifikationen",
+    "description": "Validierung fundierter Fachkenntnisse in Systemen, Netzwerken und IT-Methodiken."
   },
   "Projects": {
     "sectionSubtitle": "Projekte",

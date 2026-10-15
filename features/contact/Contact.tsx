@@ -3,6 +3,7 @@ import { profile } from '@/data/profile';
 import { Button } from '../../components/ui/moving-border';
 import { FaLocationArrow } from 'react-icons/fa6';
 import { FaDownload } from 'react-icons/fa6';
+import './contact.css'
 
 export function Contact() {
   const t = useTranslations('Contact');
@@ -11,10 +12,10 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="scroll-mt-24 px-6 py-24 sm:px-10 lg:px-16"
+      className="scroll-mt-24 px-6 py-24 sm:px-10 lg:px-16 contact-section"
     >
       <div className="mx-auto max-w-4xl">
-        <div className="rounded-2xl border border-border bg-muted/30 p-8 sm:p-12 shadow-xl shadow-blue-800 hover:shadow-sm transition ease-in-out duration-300">
+        <div className="rounded-2xl border border-border bg-muted/30 p-8 sm:p-12 shadow-xl shadow-blue-800 hover:shadow-sm transition ease-in-out duration-300 bg-white bg-fixed bg-top">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
             {t('sectionSubtitle')}
           </p>
@@ -54,7 +55,7 @@ export function Contact() {
               {profile.location}
             </p>
 
-            <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm">
+            <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-blue-950">
               <li>
                 <a
                   href={profile.links.github}

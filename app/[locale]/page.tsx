@@ -8,11 +8,13 @@ import {Projects} from '@/features/projects/Projects';
 import { Engineering } from '@/features/engineering/Engineering';
 import { Contact } from '@/features/contact/Contact';
 import { Footer } from '@/components/layout/Footer';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import CustomCursor  from '../../components/ui/custom-cursor'
 
 export default function Home() {
   return (
     <>
+      <CustomCursor />
       <NavbarComponent />
 
       <main
@@ -24,6 +26,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        {/* <Designs /> */}
         {/* <Engineering /> */}
         <Contact />
       </main>

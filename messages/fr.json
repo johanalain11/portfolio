@@ -36,9 +36,9 @@
     "sectionTitle": "À Propos",
     "headline": "Au-delà du code, l'ingénierie.",
     "paragraph1": "Je suis un <b>développeur</b> axé sur la création de solutions sécurisées et performantes. J'apprends par la pratique—en assimilant les concepts complexes à travers des projets concrets plutôt que par une étude isolée.",
-    "paragraph2": "Mon objectif principal est le développement web & mobile, la qualité logicielle (QA) et la sécurité dès la conception. Titulaire d'une Licence en Informatique (option Sécurité des Systèmes) de l'Université de Yaoundé I, j'associe de solides bases académiques à <b>3 ans d'expérience pratique sur le terrain.</b>",
+    "paragraph2": "Mon objectif principal est le développement web & mobile, la qualité logicielle (QA) et la sécurité dès la conception. Titulaire d'un Bac +3 en Informatique (option Sécurité des Systèmes Informatiques), j'associe de solides bases académiques à <b>3 ans d'expérience pratique sur le terrain.</b>",
     "paragraph3": "Je maîtrise les technologies logicielles modernes, les bases de données et les bases des pratiques DevOps sous Linux et Windows. <b>J'aime relever le défi</b> de concevoir des applications rapides, fiables, structurées et sécurisées dès leur développement.",
-    "downloadCv": "Télécharger CV"
+    "downloadCv": "Télécharger le CV"
   },
   "Skills": {
     "sectionTitle": "Compétences",
@@ -47,27 +47,27 @@
     "categories": {
       "languages": {
         "title": "Langages",
-        "description": "Les bases du développement applicatif."
+        "description": "Les fondations essentielles pour un développement applicatif propre, robuste et évolutif."
       },
       "frontend": {
         "title": "Frontend",
-        "description": "Des interfaces accessibles et maintenables."
+        "description": "Conception d'interfaces utilisateurs intuitives, accessibles et facilement maintenables."
       },
-      "backend": {
-        "title": "Backend",
-        "description": "La logique métier et les services applicatifs."
+      "backend&db": {
+        "title": "Backend et Bases de données",
+        "description": "Architecture de la logique métier, services applicatifs sécurisés et gestion optimisée des données."
       },
-      "databases": {
-        "title": "Bases de données",
-        "description": "La persistance et la gestion des données."
+      "mobile": {
+        "title": "Mobile",
+        "description": "Création d'expériences mobiles fluides et performantes (iOS & Android)."
       },
       "graphicDesign": {
         "title": "Design Graphique",
-        "description": "Les interfaces et visuels qui convertissent."
+        "description": "Création d'interfaces élégantes et de visuels stratégiques orientés conversion."
       },
       "toolsSecurity": {
         "title": "Outils et sécurité",
-        "description": "Le développement collaboratif et l’automatisation."
+        "description": "Optimisation du développement collaboratif, automatisation (CI/CD) et intégration des bonnes pratiques de sécurité."
       }
     }
   },
@@ -121,6 +121,11 @@
         ]
       }
     }
+  },
+  "Certifications": {
+    "sectionTitle": "Certifications",
+    "sectionSubtitle": "Diplômes et Titres Professionnels",
+    "description": "Validant une expertise approfondie des systèmes, des réseaux et des méthodologies clés."
   },
   "Projects": {
     "sectionSubtitle": "Réalisations",

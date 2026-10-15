@@ -3,6 +3,7 @@ import { experiences } from '@/data/experience';
 import { Timeline } from '../../components/ui/timeline';
 import { FaLocationDot, FaCircleCheck } from 'react-icons/fa6';
 import SectionTitle from '@/components/layout/section-title';
+import Certifications from '../certifications/Certifications';
 
 function formatDate(date: string, locale: string): string {
   const [year, month] = date.split('-');
@@ -95,7 +96,7 @@ export function Experience() {
     <section
       id="experiences"
       aria-labelledby="experience-title"
-      className="scroll-mt-24 px-0 py-10 sm:px-10 lg:px-16"
+      className="scroll-mt-24 px-0 py-10 sm:px-10 lg:px-16 bg-white"
     >
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle title={t('sectionSubtitle')} />
@@ -112,6 +113,7 @@ export function Experience() {
         </p>
       </div>
       <Timeline data={data}></Timeline>
+      <Certifications />
     </section>
   );
 }
