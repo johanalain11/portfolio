@@ -17,20 +17,20 @@ export const experiences: Experience[] = [
     technologies: ['Angular', 'TypeScript', 'HTML/CSS', 'UML', 'Postman', 'Figma'],
   },
   {
-    id: 'rccm',
-    translationKey: 'rccm',
-    location: 'Yaoundé, Cameroun',
-    startDate: '2023-02',
-    endDate: '2025-01',
-    technologies: ['WordPress', 'Excel'],
-  },
-  {
     id: 'patnuc',
     translationKey: 'patnuc',
     location: 'Yaoundé, Cameroun',
     startDate: '2024-05',
     endDate: '2024-10',
     technologies: ['Kobo Tools', 'UML', 'Postman'],
+  },
+  {
+    id: 'rccm',
+    translationKey: 'rccm',
+    location: 'Yaoundé, Cameroun',
+    startDate: '2023-02',
+    endDate: '2025-01',
+    technologies: ['WordPress', 'Excel'],
   },
   {
     id: 'gbc',
