@@ -84,9 +84,11 @@
         "organization": "MINEPDED",
         "description": "Contributed to the development of the second-generation Environmental Information System (SIE2).",
         "responsibilities": [
-          "Develop web interfaces adapted to various screen sizes.",
-          "Participate in the design and improvement of the user experience.",
-          "Contribute to interface customization based on user needs."
+          "Architecting and developing responsive Front-Office and Back-Office web interfaces leveraging Angular 21.",
+          "End-to-end UX/UI specification and wireframing for the web application.",
+          "Integrating RESTful APIs and securing authentication using JWT and Http-Only cookies.",
+          "Designing and implementing a Role-Based Access Control (RBAC) framework for user management.",
+          "Engineered a dynamic, user-configurable dashboard to enhance user experience."
         ]
       },
       "rccm": {
@@ -94,10 +96,10 @@
         "organization": "OHADA/MINJUSTICE",
         "description": "Contributed to project management assistance as part of the modernization project for the Trade and Personal Property Credit Register (RCCM) in Cameroon.",
         "responsibilities": [
-          "Loaded historical data into the RCCM-OHADA software using an automated script.",
-          "Supervised a data entry team, controlling and modifying historical data.",
-          "Resolved automated process issues, reducing downtime by 20%.",
-          "Participated in the design and implementation of the database for missing documents in RCCM files."
+          "Automated historical data migration into RCCM-OHADA software leveraging RPA / automated scripts.",
+          "Led and supervised a data entry team, ensuring strict data quality control and cleansing of legacy records.",
+          "Troubleshot and optimized automated workflows, successfully reducing process downtime by 20%.",
+          "Contributed to the database architecture and deployment for tracking missing documentation within RCCM files."
         ]
       },
       "patnuc": {
@@ -105,9 +107,9 @@
         "organization": "PATNUC/ MINADER/ MINEPIA",
         "description": "Participated in the development and deployment of the digital information system platform for agro-pastoral and geographical statistics under PATNUC.",
         "responsibilities": [
-          "Participated in the UML design and modeling of the collection system (using Kobo Tools), reporting, processing, and publication.",
-          "Participated in functional testing of the SINSAH platform, reducing production bugs by 30%.",
-          "Participated in the train-the-trainer workshop for the SINSAH platform."
+          "Contributed to the design and UML modeling of the end-to-end data pipeline (collection via Kobo Toolbox, reporting, processing, and publishing).",
+          "Drove functional and QA testing for the SINSAH platform, successfully cutting production bugs by 30%.",
+          "Facilitated train-the-trainer workshops to ensure seamless onboarding and user adoption of the SINSAH platform."
         ]
       },
       "gbc": {
@@ -115,9 +117,9 @@
         "organization": "Gold Telecom",
         "description": "Developed a mobile banking collection application for microfinance institutions: Gold Bank Collection.",
         "responsibilities": [
-          "Developed and maintained the application on Android Studio (Java) with an SQLite database.",
-          "Tested & debugged the application, improving banking operations by 20%.",
-          "Wrote technical documentation."
+          "Engineered and maintained the native mobile application using Android Studio (Java) and optimized local storage with SQLite.",
+          "Executed testing and debugging cycles, leading to a 20% efficiency increase in core banking operations and transactions.",
+          "Authored comprehensive technical documentation, including architecture designs and code guidelines, to ensure long-term maintainability."
         ]
       }
     }
@@ -140,27 +142,27 @@
     "items": {
       "employeeManagement": {
         "title": "Employee Management App",
-        "description": "Angular application for managing employees, forms, and leave requests.",
-        "problem": "Simplify routine employee management operations through a centralized interface.",
-        "solution": "Develop a management interface with CRUD operations, reactive forms, and dedicated Angular services for API communication."
+        "description": "HR administration web app built with Angular, dedicated to workforce tracking and leave request workflows.",
+        "problem": "Centralize and streamline routine HR operations through a single, intuitive user interface.",
+        "solution": "Leveraged a modular Angular architecture featuring Reactive Forms for data validation and decoupled services for asynchronous REST API communication."
       },
       "jobIn": {
         "title": "JOB-in",
-        "description": "Frontend platform connecting candidates and companies for job searching and recruitment management.",
-        "problem": "Provide an interface that distinguishes candidate needs from company needs within a single platform.",
-        "solution": "Design a React application organized around a public space, a candidate space, and a company space, with tailored interfaces and user flows for each profile."
+        "description": "React-based recruitment platform mapping and managing hiring connections between candidates and corporations.",
+        "problem": "Isolate and optimize distinct user journeys and feature sets for both applicants and recruiters within a single ecosystem.",
+        "solution": "Designed a multi-tenant architecture isolated into three spaces (Public, Candidate, Corporate) with tailored interfaces and smooth state management."
       },
       "ecommerceAngular": {
         "title": "Ecommerce Angular",
-        "description": "Frontend e-commerce application for browsing products and managing a shopping cart.",
-        "problem": "Set up a simple purchasing journey with product browsing and a summary of selected items.",
-        "solution": "Consume data from FakeStoreAPI, display products, and centralize cart management in an Angular service with calculation of total quantity and price."
+        "description": "E-commerce Single Page Application (SPA) built for catalog browsing and real-time shopping cart management.",
+        "problem": "Ensure a frictionless checkout experience with instantaneous item updates without page reloads.",
+        "solution": "Integrated and consumed FakeStoreAPI, while engineering a centralized Angular service to handle core business logic and dynamic price calculations."
       },
       "vatecedi": {
         "title": "Vatecedi",
-        "description": "Python application for calculating statistical measures for discrete or continuous data series.",
-        "problem": "Facilitate the calculation of descriptive statistical measures from population frequencies.",
-        "solution": "Develop calculation functions and a graphical interface to obtain measures of central tendency and dispersion, with terminal usage support."
+        "description": "Data analysis utility engineered in Python for automated descriptive statistics calculation.",
+        "problem": "Accelerate the extraction of central tendency and dispersion metrics from complex statistical datasets.",
+        "solution": "Developed native statistical computing algorithms and implemented a interface system featuring an accessible GUI with TKinter."
       }
     }
   },

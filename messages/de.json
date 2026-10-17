@@ -84,9 +84,11 @@
         "organization": "MINEPDED",
         "description": "Mitwirkung an der Entwicklung des Umweltinformationssystems der zweiten Generation (SIE2).",
         "responsibilities": [
-          "Entwicklung von Web-Schnittstellen, die an verschiedene Bildschirmformate angepasst sind.",
-          "Mitwirkung beim Design und der Verbesserung der Benutzererfahrung.",
-          "Beitrag zur Anpassung der Benutzeroberfläche an die Bedürfnisse der Benutzer."
+          "Konzeption und Entwicklung responsiver Front-Office- und Back-Office-Weboberflächen mittels Angular 21.",
+          "End-to-End-Spezifikation und Design der UX/UI für die gesamte Webanwendung.",
+          "Anbindung von REST-APIs und Implementierung sicherer JWT/Http-Only-Authentifizierungsverfahren.",
+          "Modellierung und Integration einer rollenbasierten Zugriffskontrolle (RBAC) für das Benutzermanagement.",
+          "Entwicklung eines dynamischen, benutzerdefinierten Dashboards zur Optimierung der Usability."
         ]
       },
       "rccm": {
@@ -94,10 +96,10 @@
         "organization": "OHADA/MINJUSTICE",
         "description": "Unterstützung des Projektmanagements im Rahmen des Modernisierungsprojekts des Handels- und Mobiliarkreditregisters (RCCM) in Kamerun.",
         "responsibilities": [
-          "Laden historischer Daten in die RCCM-OHADA-Software mithilfe eines automatisierten Skripts.",
-          "Überwachung eines Dateneingabeteams, Kontrolle und Änderung historischer Daten.",
-          "Behebung von Problemen bei automatisierten Prozessen, wodurch Ausfallzeiten um 20 % reduziert wurden.",
-          "Mitwirkung am Entwurf und der Implementierung der Datenbank für fehlende Dokumente in RCCM-Akten."
+          "Automatisierte Migration historischer Daten in die RCCM-OHADA-Software mittels RPA / Skriptautomatisierung.",
+          "Leitung und Supervision eines Datenerfassungsteams sowie Sicherstellung der Qualitätskontrolle und Bereinigung von Altdaten.",
+          "Fehlerbehebung und Optimierung automatisierter Workflows, mit einer Reduzierung der Systemausfallzeiten um 20 %.",
+          "Mitwirkung an der Datenbankarchitektur und -implementierung zur Erfassung fehlender Dokumente in RCCM-Vorgängen."
         ]
       },
       "patnuc": {
@@ -105,9 +107,9 @@
         "organization": "PATNUC/ MINADER/ MINEPIA",
         "description": "Teilnahme an der Entwicklung und Bereitstellung der digitalen Informationssystemplattform für agrarische und geografische Statistiken im Rahmen von PATNUC.",
         "responsibilities": [
-          "Mitwirkung am UML-Design und der Modellierung des Erfassungssystems (unter Verwendung von Kobo Tools), der Berichterstattung, Verarbeitung und Veröffentlichung.",
-          "Teilnahme an Funktionstests der SINSAH-Plattform, wodurch Fehler in der Produktion um 30 % reduziert wurden.",
-          "Teilnahme am Schulungsworkshop für Trainer der SINSAH-Plattform."
+          "Mitwirkung an der Konzeption und UML-Modellierung der Data Pipeline (Erhebung über Kobo Toolbox, Übermittlung, Verarbeitung und Veröffentlichung).",
+          "Durchführung funktionaler Tests (QA) auf der SINSAH-Plattform, was zu einer 30-prozentigen Reduzierung von Bugs in der Produktion führte.",
+          "Konzeption und Durchführung von Train-the-Trainer-Workshops zur Förderung der Benutzerakzeptanz der SINSAH-Plattform."
         ]
       },
       "gbc": {
@@ -115,9 +117,9 @@
         "organization": "Gold Telecom",
         "description": "Entwicklung einer mobilen Banking-Kollektionsanwendung für Mikrofinanzinstitute: Gold Bank Collection.",
         "responsibilities": [
-          "Entwicklung und Wartung der Anwendung in Android Studio (Java) mit einer SQLite-Datenbank.",
-          "Testen und Debuggen der Anwendung, wodurch Bankgeschäfte um 20 % verbessert wurden.",
-          "Verfassen der technischen Dokumentation."
+          "Entwicklung und kontinuierliche Wartung der nativen Mobile-App in Android Studio (Java) inklusive lokaler Datenhaltung mit SQLite.",
+          "Durchführung von Test- und Debugging-Prozessen, was zu einer 20-prozentigen Effizienzsteigerung der Banktransaktionen führte.",
+          "Erstellung der vollständigen technischen Dokumentation (Architekturhandbücher und Code-Richtlinien) zur Gewährleistung der Wartbarkeit."
         ]
       }
     }
@@ -140,27 +142,27 @@
     "items": {
       "employeeManagement": {
         "title": "Employee Management App",
-        "description": "Angular-Anwendung zur Verwaltung von Mitarbeitern, Formularen und Urlaubsanträgen.",
-        "problem": "Vereinfachung routinemäßiger Personalverwaltungsaufgaben über eine zentralisierte Benutzeroberfläche.",
-        "solution": "Entwicklung einer Verwaltungsschnittstelle mit CRUD-Operationen, reaktiven Formularen und dedizierten Angular-Diensten für die API-Kommunikation."
+        "description": "HR-Verwaltungs-Web-App auf Basis von Angular zur Steuerung von Personalbeständen und Urlaubsantragsworkflows.",
+        "problem": "Zentralisierung und Vereinfachung routinemäßiger HR-Prozesse über eine einheitliche, intuitive Benutzeroberfläche.",
+        "solution": "Implementierung einer modularen Angular-Architektur mit Reactive Forms zur Datenvalidierung und entkoppelten Services für die asynchrone REST-API-Kommunikation."
       },
       "jobIn": {
         "title": "JOB-in",
-        "description": "Frontend-Plattform zur Verbindung von Bewerbern und Unternehmen für die Jobsuche und das Rekrutierungsmanagement.",
-        "problem": "Bereitstellung einer Benutzeroberfläche, die die Bedürfnisse von Kandidaten und Unternehmen auf einer einzigen Plattform trennt.",
-        "solution": "Entwurf einer React-Anwendung, die um einen öffentlichen Bereich, einen Kandidatenbereich und einen Unternehmensbereich herum aufgebaut ist, mit maßgeschneiderten Benutzeroberflächen und Abläufen für jedes Profil."
+        "description": "React-basierte Recruiting-Plattform zur Vernetzung und Steuerung des Bewerbungsprozesses zwischen Kandidaten und Unternehmen.",
+        "problem": "Saubere Trennung und Optimierung der User Journeys und Funktionen für Bewerber und Recruiter innerhalb desselben Ökosystems.",
+        "solution": "Konzeption einer Multi-Tenant-Architektur, aufgeteilt in drei spezifische Bereiche (Öffentlich, Bewerber, Unternehmen) mit maßgeschneiderten Benutzeroberflächen und intuitivem State Management."
       },
       "ecommerceAngular": {
         "title": "Ecommerce Angular",
-        "description": "Frontend-E-Commerce-Anwendung zum Durchsuchen von Produkten und Verwalten eines Warenkorbs.",
-        "problem": "Einrichtung eines einfachen Kaufprozesses mit Produktkatalog und Übersicht ausgewählter Artikel.",
-        "solution": "Nutzung von FakeStoreAPI-Daten, Anzeige von Produkten und Zentralisierung der Warenkorbverwaltung in einem Angular-Dienst mit Berechnung von Gesamtmenge und -preis."
+        "description": "E-Commerce Single Page Application (SPA) zur Katalogansicht und Echtzeit-Warenkorbverwaltung.",
+        "problem": "Gewährleistung eines reibungslosen Kaufprozesses mit sofortiger Aktualisierung ausgewählter Artikel ohne Neuladen der Seite.",
+        "solution": "Anbindung und Konsumierung der FakeStoreAPI sowie Zentralisierung der Geschäftslogik und der dynamischen Preisberechnung in einem wiederverwendbaren Angular-Service."
       },
       "vatecedi": {
         "title": "Vatecedi",
-        "description": "Python-Anwendung zur Berechnung statistischer Maße für diskrete oder stetige Datenreihen.",
-        "problem": "Erleichterung der Berechnung deskriptiver statistischer Maße aus Populationshäufigkeiten.",
-        "solution": "Entwicklung von Berechnungsfunktionen und einer grafischen Benutzeroberfläche zur Ermittlung von Maßen der zentralen Tendenz und Streuung, mit Unterstützung für die Terminalnutzung."
+        "description": "In Python entwickeltes Datenanalyse-Tool zur automatisierten Berechnung deskriptiver statistischer Kennzahlen.",
+        "problem": "Beschleunigung der Ermittlung von Maßen der zentralen Tendenz und Dispersion aus komplexen statistischen Datensätzen.",
+        "solution": "Entwicklung nativer statistischer Berechnungsalgorithmen und Implementierung einer Benutzeroberfläche aus benutzerfreundlicher GUI mit TKinter."
       }
     }
   },
