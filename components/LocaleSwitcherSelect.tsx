@@ -29,11 +29,11 @@ export default function LocalSwitcherSelect({children, value, label}: Props) {
   return (
     <label 
       className={clsx(
-        "relative text-gray-400",
+        "relative text-gray-400 bg-white/10 text-center flex items-center justify-center rounded-lg",
         isPending && "transition-opacity"
       )}>
         <p className='sr-only'>{label}</p>
-        <select className='inline-flex appearance-none bg-transparent py-3 pl-2 pr-6' value={value} disabled={isPending} onChange={onSelectChange}>
+        <select className='inline-flex appearance-none bg-transparent p-2' value={value} disabled={isPending} onChange={onSelectChange}>
           {children}
         </select>
         <span className='pointer-events-none absolute right-2 top-2'></span>
