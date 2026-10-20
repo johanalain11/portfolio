@@ -8,6 +8,10 @@
     "contactButton": "Kontaktiere mich",
     "logoAlt": "Logo"
   },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {DE} fr {FR} en {EN} other{Unknow}}"
+  },
   "Profile": {
     "role": "Softwareingenieur"
   },

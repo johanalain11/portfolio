@@ -12,7 +12,7 @@ import {
   MobileNavToggle, 
   MobileNavMenu 
 } from "@/components/ui/resizable-navbar";
-import { LocaleSwitcher } from '@/components/locale-switcher';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 const NavbarComponent = () => {
   const t = useTranslations('Navbar');
@@ -48,10 +48,10 @@ const NavbarComponent = () => {
         <NavbarLogo />
         <NavItems items={navItems} />
         <div className="flex items-center gap-2">
-          {/* <LocaleSwitcher /> */}
           <NavbarButton href="#contact" variant="primary">
             {t('contactButton')}
           </NavbarButton>
+          <LocaleSwitcher />
         </div>
       </NavBody>
 
@@ -80,7 +80,7 @@ const NavbarComponent = () => {
             </a>
           ))}
           <div className="flex w-full flex-col gap-4">
-            {/* <LocaleSwitcher /> */}
+            <LocaleSwitcher />
             <NavbarButton
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
